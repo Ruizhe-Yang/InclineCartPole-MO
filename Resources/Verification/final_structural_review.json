@@ -1,0 +1,2930 @@
+{
+  "status": "PASS",
+  "scope": "最终工作源码的静态结构与指定连接端点检查；不包含编译、仿真或UI渲染。源码字符串/注释不参与结构判断。",
+  "source_root": "InclineCartPole",
+  "modelica_file_count": 68,
+  "top_level": {
+    "status": "PASS",
+    "nodes": [
+      {
+        "name": "mission",
+        "type": "MissionCommand"
+      },
+      {
+        "name": "controller",
+        "type": "Control.CartController"
+      },
+      {
+        "name": "cartPole",
+        "type": "Mechanical.CartPoleSystem"
+      },
+      {
+        "name": "environment",
+        "type": "Environment.Environment"
+      },
+      {
+        "name": "displays",
+        "type": "Displays.RunDisplay"
+      }
+    ],
+    "node_count": 5,
+    "connect_count": 13
+  },
+  "acquisition_ownership": {
+    "status": "PASS",
+    "acquisition_class_file_removed": true,
+    "active_acquisition_references": [],
+    "plant_direct_components": [
+      {
+        "instance": "positionEncoder",
+        "type": "Signals.PositionEncoder",
+        "array": "",
+        "status": "PASS"
+      },
+      {
+        "instance": "angleEncoder",
+        "type": "Signals.AngleEncoder",
+        "array": "",
+        "status": "PASS"
+      },
+      {
+        "instance": "loadCells",
+        "type": "Signals.LoadCell",
+        "array": "[4]",
+        "status": "PASS"
+      },
+      {
+        "instance": "sampleClock",
+        "type": "Modelica.Blocks.Sources.SampleTrigger",
+        "array": "",
+        "status": "PASS"
+      },
+      {
+        "instance": "transport",
+        "type": "Signals.SampledTransport",
+        "array": "",
+        "status": "PASS"
+      },
+      {
+        "instance": "interpose",
+        "type": "Signals.MeasurementInterpose",
+        "array": "",
+        "status": "PASS"
+      }
+    ],
+    "load_cell_count": 4
+  },
+  "package_order": {
+    "status": "PASS",
+    "packages": [
+      {
+        "package": ".",
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "status": "PASS"
+      },
+      {
+        "package": "Environment",
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "status": "PASS"
+      },
+      {
+        "package": "Electrical",
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "status": "PASS"
+      },
+      {
+        "package": "Simulation",
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "status": "PASS"
+      },
+      {
+        "package": "Signals",
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "status": "PASS"
+      },
+      {
+        "package": "Control",
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "status": "PASS"
+      },
+      {
+        "package": "Displays",
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "status": "PASS"
+      },
+      {
+        "package": "Mechanical",
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "status": "PASS"
+      },
+      {
+        "package": "Interfaces",
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "status": "PASS"
+      },
+      {
+        "package": "Control/LogicUnits",
+        "missing": [],
+        "extra": [],
+        "duplicates": [],
+        "status": "PASS"
+      }
+    ]
+  },
+  "connection_only_assemblies": {
+    "status": "PASS",
+    "class_count": 26,
+    "classes": [
+      {
+        "class": "InclineCartPole.Environment.Environment",
+        "local_connect_count": 3,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.ObservedCellStack",
+        "local_connect_count": 2,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.BatterySupply",
+        "local_connect_count": 33,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.WheelDrive",
+        "local_connect_count": 58,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "local_connect_count": 13,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.MissionCommand",
+        "local_connect_count": 1,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Signals.MeasurementInterpose",
+        "local_connect_count": 1,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.BalanceLoop",
+        "local_connect_count": 41,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.EnergySwingUp",
+        "local_connect_count": 24,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.CartController",
+        "local_connect_count": 37,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "local_connect_count": 41,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Displays.StatusPanel",
+        "local_connect_count": 6,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Displays.MotionPanel",
+        "local_connect_count": 5,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Displays.DrivePanel",
+        "local_connect_count": 8,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Displays.SensingPanel",
+        "local_connect_count": 6,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Displays.ContactPanel",
+        "local_connect_count": 4,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Displays.RunDisplay",
+        "local_connect_count": 10,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Displays.PowerPanel",
+        "local_connect_count": 6,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.WheelAssembly",
+        "local_connect_count": 17,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "local_connect_count": 103,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.LogicUnits.BalanceRegion",
+        "local_connect_count": 12,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.LogicUnits.StepResidence",
+        "local_connect_count": 8,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.LogicUnits.WrappedAngle",
+        "local_connect_count": 5,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.LogicUnits.ModeSequence",
+        "local_connect_count": 49,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.LogicUnits.CaptureRegion",
+        "local_connect_count": 13,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.LogicUnits.AccelerationSelector",
+        "local_connect_count": 26,
+        "non_connect_local_equations": [],
+        "status": "PASS"
+      }
+    ],
+    "boundary": "检查含connect的本项目类本地equation区；LU继承的MSL内部方程不属于白箱装配检查范围。"
+  },
+  "connection_graphics": {
+    "status": "PASS",
+    "total_connect_statements": 532,
+    "missing_Line_or_point_pairs": []
+  },
+  "transport_endpoint_corrections": [
+    {
+      "connection": "loadCells.force -> transport.normal",
+      "endpoint": "to",
+      "expected": [
+        1415.0,
+        -51.5
+      ],
+      "actual": [
+        1415.0,
+        -51.5
+      ],
+      "status": "PASS"
+    },
+    {
+      "connection": "transport.tick -> tick",
+      "endpoint": "from",
+      "expected": [
+        1645.0,
+        29.0
+      ],
+      "actual": [
+        1645.0,
+        29.0
+      ],
+      "status": "PASS"
+    }
+  ],
+  "scoped_endpoint_geometry": {
+    "status": "PASS",
+    "checked_endpoint_count": 156,
+    "checks": [
+      {
+        "class": "InclineCartPole.Electrical.BatterySupply",
+        "connection": "dischargeSign.y -> telemetry.batteryCurrent",
+        "endpoint": "from",
+        "expected": [
+          138.5,
+          570.0
+        ],
+        "actual": [
+          138.5,
+          570.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.BatterySupply",
+        "connection": "dischargeSign.y -> telemetry.batteryCurrent",
+        "endpoint": "to",
+        "expected": [
+          790.0,
+          -110.0
+        ],
+        "actual": [
+          790.0,
+          -110.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.BatterySupply",
+        "connection": "cell.SOCSignal -> telemetry.SOC",
+        "endpoint": "from",
+        "expected": [
+          -490.0,
+          274.0
+        ],
+        "actual": [
+          -490.0,
+          274.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.BatterySupply",
+        "connection": "cell.SOCSignal -> telemetry.SOC",
+        "endpoint": "to",
+        "expected": [
+          790.0,
+          -110.0
+        ],
+        "actual": [
+          790.0,
+          -110.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.BatterySupply",
+        "connection": "busSensor.v -> telemetry.busVoltage",
+        "endpoint": "from",
+        "expected": [
+          471.5,
+          200.0
+        ],
+        "actual": [
+          471.5,
+          200.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.BatterySupply",
+        "connection": "busSensor.v -> telemetry.busVoltage",
+        "endpoint": "to",
+        "expected": [
+          790.0,
+          -110.0
+        ],
+        "actual": [
+          790.0,
+          -110.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.BatterySupply",
+        "connection": "coreSensor.T -> telemetry.batteryTemperature",
+        "endpoint": "from",
+        "expected": [
+          383.0,
+          -430.0
+        ],
+        "actual": [
+          383.0,
+          -430.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.BatterySupply",
+        "connection": "coreSensor.T -> telemetry.batteryTemperature",
+        "endpoint": "to",
+        "expected": [
+          790.0,
+          -110.0
+        ],
+        "actual": [
+          790.0,
+          -110.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.WheelDrive",
+        "connection": "shunt.i -> telemetry.motorCurrent",
+        "endpoint": "from",
+        "expected": [
+          -120.0,
+          511.5
+        ],
+        "actual": [
+          -120.0,
+          511.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.WheelDrive",
+        "connection": "shunt.i -> telemetry.motorCurrent",
+        "endpoint": "to",
+        "expected": [
+          1220.0,
+          -700.0
+        ],
+        "actual": [
+          1220.0,
+          -700.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.WheelDrive",
+        "connection": "windingSensor.T -> telemetry.windingTemperature",
+        "endpoint": "from",
+        "expected": [
+          -767.0,
+          -730.0
+        ],
+        "actual": [
+          -767.0,
+          -730.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Electrical.WheelDrive",
+        "connection": "windingSensor.T -> telemetry.windingTemperature",
+        "endpoint": "to",
+        "expected": [
+          1220.0,
+          -700.0
+        ],
+        "actual": [
+          1220.0,
+          -700.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "mission.release -> cartPole.releaseCommand",
+        "endpoint": "from",
+        "expected": [
+          -440.0,
+          250.0
+        ],
+        "actual": [
+          -440.0,
+          250.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "mission.release -> cartPole.releaseCommand",
+        "endpoint": "to",
+        "expected": [
+          5.0,
+          93.75
+        ],
+        "actual": [
+          5.0,
+          93.75
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "controller.command -> cartPole.command",
+        "endpoint": "from",
+        "expected": [
+          -190.0,
+          0.0
+        ],
+        "actual": [
+          -190.0,
+          0.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "controller.command -> cartPole.command",
+        "endpoint": "to",
+        "expected": [
+          5.0,
+          50.0
+        ],
+        "actual": [
+          5.0,
+          50.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "cartPole.measurements -> controller.measurements",
+        "endpoint": "from",
+        "expected": [
+          255.0,
+          50.0
+        ],
+        "actual": [
+          255.0,
+          50.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "cartPole.measurements -> controller.measurements",
+        "endpoint": "to",
+        "expected": [
+          -370.0,
+          0.0
+        ],
+        "actual": [
+          -370.0,
+          0.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "cartPole.tick -> controller.tick",
+        "endpoint": "from",
+        "expected": [
+          255.0,
+          18.75
+        ],
+        "actual": [
+          255.0,
+          18.75
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "cartPole.tick -> controller.tick",
+        "endpoint": "to",
+        "expected": [
+          -370.0,
+          54.0
+        ],
+        "actual": [
+          -370.0,
+          54.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "cartPole.gateReleased -> controller.gateReleased",
+        "endpoint": "from",
+        "expected": [
+          255.0,
+          93.75
+        ],
+        "actual": [
+          255.0,
+          93.75
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "cartPole.gateReleased -> controller.gateReleased",
+        "endpoint": "to",
+        "expected": [
+          -370.0,
+          -27.0
+        ],
+        "actual": [
+          -370.0,
+          -27.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "cartPole.powerGood -> controller.powerGood",
+        "endpoint": "from",
+        "expected": [
+          255.0,
+          -6.25
+        ],
+        "actual": [
+          255.0,
+          -6.25
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "cartPole.powerGood -> controller.powerGood",
+        "endpoint": "to",
+        "expected": [
+          -370.0,
+          -54.0
+        ],
+        "actual": [
+          -370.0,
+          -54.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "environment.windX -> cartPole.windX",
+        "endpoint": "from",
+        "expected": [
+          -220.0,
+          -220.0
+        ],
+        "actual": [
+          -220.0,
+          -220.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "environment.windX -> cartPole.windX",
+        "endpoint": "to",
+        "expected": [
+          5.0,
+          -50.0
+        ],
+        "actual": [
+          5.0,
+          -50.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "environment.windY -> cartPole.windY",
+        "endpoint": "from",
+        "expected": [
+          -220.0,
+          -244.0
+        ],
+        "actual": [
+          -220.0,
+          -244.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "environment.windY -> cartPole.windY",
+        "endpoint": "to",
+        "expected": [
+          5.0,
+          -87.5
+        ],
+        "actual": [
+          5.0,
+          -87.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "environment.ambient -> cartPole.ambient",
+        "endpoint": "from",
+        "expected": [
+          -280.0,
+          -310.0
+        ],
+        "actual": [
+          -280.0,
+          -310.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "environment.ambient -> cartPole.ambient",
+        "endpoint": "to",
+        "expected": [
+          130.0,
+          -125.0
+        ],
+        "actual": [
+          130.0,
+          -125.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "cartPole.telemetry -> displays.plant",
+        "endpoint": "from",
+        "expected": [
+          255.0,
+          -68.75
+        ],
+        "actual": [
+          255.0,
+          -68.75
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "cartPole.telemetry -> displays.plant",
+        "endpoint": "to",
+        "expected": [
+          435.0,
+          63.0
+        ],
+        "actual": [
+          435.0,
+          63.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "cartPole.measurements -> displays.measurements",
+        "endpoint": "from",
+        "expected": [
+          255.0,
+          50.0
+        ],
+        "actual": [
+          255.0,
+          50.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "cartPole.measurements -> displays.measurements",
+        "endpoint": "to",
+        "expected": [
+          435.0,
+          21.0
+        ],
+        "actual": [
+          435.0,
+          21.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "controller.command -> displays.command",
+        "endpoint": "from",
+        "expected": [
+          -190.0,
+          0.0
+        ],
+        "actual": [
+          -190.0,
+          0.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "controller.command -> displays.command",
+        "endpoint": "to",
+        "expected": [
+          435.0,
+          -21.0
+        ],
+        "actual": [
+          435.0,
+          -21.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "controller.telemetry -> displays.control",
+        "endpoint": "from",
+        "expected": [
+          -190.0,
+          -54.0
+        ],
+        "actual": [
+          -190.0,
+          -54.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Simulation.CompleteMission",
+        "connection": "controller.telemetry -> displays.control",
+        "endpoint": "to",
+        "expected": [
+          435.0,
+          -63.0
+        ],
+        "actual": [
+          435.0,
+          -63.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.CartController",
+        "connection": "supervisor.telemetry -> telemetry",
+        "endpoint": "from",
+        "expected": [
+          170.0,
+          76.0
+        ],
+        "actual": [
+          170.0,
+          76.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.CartController",
+        "connection": "supervisor.telemetry -> telemetry",
+        "endpoint": "to",
+        "expected": [
+          1140.0,
+          -420.0
+        ],
+        "actual": [
+          1140.0,
+          -420.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "connection": "sequence.kick -> telemetry.kick",
+        "endpoint": "from",
+        "expected": [
+          160.0,
+          340.0
+        ],
+        "actual": [
+          160.0,
+          340.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "connection": "sequence.kick -> telemetry.kick",
+        "endpoint": "to",
+        "expected": [
+          1200.0,
+          -620.0
+        ],
+        "actual": [
+          1200.0,
+          -620.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "connection": "sequence.swing -> telemetry.swing",
+        "endpoint": "from",
+        "expected": [
+          160.0,
+          300.0
+        ],
+        "actual": [
+          160.0,
+          300.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "connection": "sequence.swing -> telemetry.swing",
+        "endpoint": "to",
+        "expected": [
+          1200.0,
+          -620.0
+        ],
+        "actual": [
+          1200.0,
+          -620.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "connection": "sequence.capture -> telemetry.capture",
+        "endpoint": "from",
+        "expected": [
+          160.0,
+          260.0
+        ],
+        "actual": [
+          160.0,
+          260.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "connection": "sequence.capture -> telemetry.capture",
+        "endpoint": "to",
+        "expected": [
+          1200.0,
+          -620.0
+        ],
+        "actual": [
+          1200.0,
+          -620.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "connection": "sequence.balancing -> telemetry.balancing",
+        "endpoint": "from",
+        "expected": [
+          160.0,
+          220.0
+        ],
+        "actual": [
+          160.0,
+          220.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "connection": "sequence.balancing -> telemetry.balancing",
+        "endpoint": "to",
+        "expected": [
+          1200.0,
+          -620.0
+        ],
+        "actual": [
+          1200.0,
+          -620.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "connection": "sequence.disabled -> telemetry.disabled",
+        "endpoint": "from",
+        "expected": [
+          160.0,
+          200.0
+        ],
+        "actual": [
+          160.0,
+          200.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "connection": "sequence.disabled -> telemetry.disabled",
+        "endpoint": "to",
+        "expected": [
+          1200.0,
+          -620.0
+        ],
+        "actual": [
+          1200.0,
+          -620.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "connection": "selector.acceleration -> telemetry.acceleration",
+        "endpoint": "from",
+        "expected": [
+          655.0,
+          -70.0
+        ],
+        "actual": [
+          655.0,
+          -70.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Control.ModeSupervisor",
+        "connection": "selector.acceleration -> telemetry.acceleration",
+        "endpoint": "to",
+        "expected": [
+          1200.0,
+          -620.0
+        ],
+        "actual": [
+          1200.0,
+          -620.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.WheelAssembly",
+        "connection": "driveUnit.telemetry.motorCurrent -> telemetry.motorCurrent",
+        "endpoint": "from",
+        "expected": [
+          -205.0,
+          63.75
+        ],
+        "actual": [
+          -205.0,
+          63.75
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.WheelAssembly",
+        "connection": "driveUnit.telemetry.motorCurrent -> telemetry.motorCurrent",
+        "endpoint": "to",
+        "expected": [
+          740.0,
+          -200.0
+        ],
+        "actual": [
+          740.0,
+          -200.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.WheelAssembly",
+        "connection": "driveUnit.telemetry.windingTemperature -> telemetry.windingTemperature",
+        "endpoint": "from",
+        "expected": [
+          -205.0,
+          63.75
+        ],
+        "actual": [
+          -205.0,
+          63.75
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.WheelAssembly",
+        "connection": "driveUnit.telemetry.windingTemperature -> telemetry.windingTemperature",
+        "endpoint": "to",
+        "expected": [
+          740.0,
+          -200.0
+        ],
+        "actual": [
+          740.0,
+          -200.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.WheelAssembly",
+        "connection": "contact.slipVelocity -> telemetry.slipVelocity",
+        "endpoint": "from",
+        "expected": [
+          355.0,
+          79.75
+        ],
+        "actual": [
+          355.0,
+          79.75
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.WheelAssembly",
+        "connection": "contact.slipVelocity -> telemetry.slipVelocity",
+        "endpoint": "to",
+        "expected": [
+          740.0,
+          -200.0
+        ],
+        "actual": [
+          740.0,
+          -200.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.s -> positionEncoder.truth",
+        "endpoint": "from",
+        "expected": [
+          780.0,
+          160.0
+        ],
+        "actual": [
+          780.0,
+          160.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.s -> positionEncoder.truth",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          256.0
+        ],
+        "actual": [
+          990.0,
+          256.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.theta -> angleEncoder.truth",
+        "endpoint": "from",
+        "expected": [
+          780.0,
+          70.0
+        ],
+        "actual": [
+          780.0,
+          70.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.theta -> angleEncoder.truth",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          -24.0
+        ],
+        "actual": [
+          990.0,
+          -24.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.normal -> loadCells.truth",
+        "endpoint": "from",
+        "expected": [
+          780.0,
+          -30.0
+        ],
+        "actual": [
+          780.0,
+          -30.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.normal -> loadCells.truth",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          -304.0
+        ],
+        "actual": [
+          990.0,
+          -304.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> positionEncoder.sampleTick",
+        "endpoint": "from",
+        "expected": [
+          1519.5,
+          590.0
+        ],
+        "actual": [
+          1519.5,
+          590.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> positionEncoder.sampleTick",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          212.0
+        ],
+        "actual": [
+          990.0,
+          212.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> positionEncoder.powered",
+        "endpoint": "from",
+        "expected": [
+          -790.0,
+          715.5
+        ],
+        "actual": [
+          -790.0,
+          715.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> positionEncoder.powered",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          184.0
+        ],
+        "actual": [
+          990.0,
+          184.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> angleEncoder.sampleTick",
+        "endpoint": "from",
+        "expected": [
+          1519.5,
+          590.0
+        ],
+        "actual": [
+          1519.5,
+          590.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> angleEncoder.sampleTick",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          -68.0
+        ],
+        "actual": [
+          990.0,
+          -68.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> angleEncoder.powered",
+        "endpoint": "from",
+        "expected": [
+          -790.0,
+          715.5
+        ],
+        "actual": [
+          -790.0,
+          715.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> angleEncoder.powered",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          -96.0
+        ],
+        "actual": [
+          990.0,
+          -96.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> loadCells[1].sampleTick",
+        "endpoint": "from",
+        "expected": [
+          1519.5,
+          590.0
+        ],
+        "actual": [
+          1519.5,
+          590.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> loadCells[1].sampleTick",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          -348.0
+        ],
+        "actual": [
+          990.0,
+          -348.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> loadCells[1].powered",
+        "endpoint": "from",
+        "expected": [
+          -790.0,
+          715.5
+        ],
+        "actual": [
+          -790.0,
+          715.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> loadCells[1].powered",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          -376.0
+        ],
+        "actual": [
+          990.0,
+          -376.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> loadCells[2].sampleTick",
+        "endpoint": "from",
+        "expected": [
+          1519.5,
+          590.0
+        ],
+        "actual": [
+          1519.5,
+          590.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> loadCells[2].sampleTick",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          -348.0
+        ],
+        "actual": [
+          990.0,
+          -348.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> loadCells[2].powered",
+        "endpoint": "from",
+        "expected": [
+          -790.0,
+          715.5
+        ],
+        "actual": [
+          -790.0,
+          715.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> loadCells[2].powered",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          -376.0
+        ],
+        "actual": [
+          990.0,
+          -376.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> loadCells[3].sampleTick",
+        "endpoint": "from",
+        "expected": [
+          1519.5,
+          590.0
+        ],
+        "actual": [
+          1519.5,
+          590.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> loadCells[3].sampleTick",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          -348.0
+        ],
+        "actual": [
+          990.0,
+          -348.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> loadCells[3].powered",
+        "endpoint": "from",
+        "expected": [
+          -790.0,
+          715.5
+        ],
+        "actual": [
+          -790.0,
+          715.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> loadCells[3].powered",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          -376.0
+        ],
+        "actual": [
+          990.0,
+          -376.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> loadCells[4].sampleTick",
+        "endpoint": "from",
+        "expected": [
+          1519.5,
+          590.0
+        ],
+        "actual": [
+          1519.5,
+          590.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> loadCells[4].sampleTick",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          -348.0
+        ],
+        "actual": [
+          990.0,
+          -348.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> loadCells[4].powered",
+        "endpoint": "from",
+        "expected": [
+          -790.0,
+          715.5
+        ],
+        "actual": [
+          -790.0,
+          715.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> loadCells[4].powered",
+        "endpoint": "to",
+        "expected": [
+          990.0,
+          -376.0
+        ],
+        "actual": [
+          990.0,
+          -376.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> transport.sampleTick",
+        "endpoint": "from",
+        "expected": [
+          1519.5,
+          590.0
+        ],
+        "actual": [
+          1519.5,
+          590.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "sampleClock.y -> transport.sampleTick",
+        "endpoint": "to",
+        "expected": [
+          1415.0,
+          -91.75
+        ],
+        "actual": [
+          1415.0,
+          -91.75
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> transport.powered",
+        "endpoint": "from",
+        "expected": [
+          -790.0,
+          715.5
+        ],
+        "actual": [
+          -790.0,
+          715.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> transport.powered",
+        "endpoint": "to",
+        "expected": [
+          1415.0,
+          -126.25
+        ],
+        "actual": [
+          1415.0,
+          -126.25
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "positionEncoder.value -> transport.position",
+        "endpoint": "from",
+        "expected": [
+          1150.0,
+          260.0
+        ],
+        "actual": [
+          1150.0,
+          260.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "positionEncoder.value -> transport.position",
+        "endpoint": "to",
+        "expected": [
+          1415.0,
+          40.5
+        ],
+        "actual": [
+          1415.0,
+          40.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "positionEncoder.rate -> transport.velocity",
+        "endpoint": "from",
+        "expected": [
+          1150.0,
+          220.0
+        ],
+        "actual": [
+          1150.0,
+          220.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "positionEncoder.rate -> transport.velocity",
+        "endpoint": "to",
+        "expected": [
+          1415.0,
+          17.5
+        ],
+        "actual": [
+          1415.0,
+          17.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "angleEncoder.value -> transport.angle",
+        "endpoint": "from",
+        "expected": [
+          1150.0,
+          -20.0
+        ],
+        "actual": [
+          1150.0,
+          -20.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "angleEncoder.value -> transport.angle",
+        "endpoint": "to",
+        "expected": [
+          1415.0,
+          -5.5
+        ],
+        "actual": [
+          1415.0,
+          -5.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "angleEncoder.rate -> transport.angularVelocity",
+        "endpoint": "from",
+        "expected": [
+          1150.0,
+          -60.0
+        ],
+        "actual": [
+          1150.0,
+          -60.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "angleEncoder.rate -> transport.angularVelocity",
+        "endpoint": "to",
+        "expected": [
+          1415.0,
+          -28.5
+        ],
+        "actual": [
+          1415.0,
+          -28.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "loadCells.force -> transport.normal",
+        "endpoint": "from",
+        "expected": [
+          1150.0,
+          -320.0
+        ],
+        "actual": [
+          1150.0,
+          -320.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "loadCells.force -> transport.normal",
+        "endpoint": "to",
+        "expected": [
+          1415.0,
+          -51.5
+        ],
+        "actual": [
+          1415.0,
+          -51.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "transport.delivered -> interpose.u",
+        "endpoint": "from",
+        "expected": [
+          1645.0,
+          -40.0
+        ],
+        "actual": [
+          1645.0,
+          -40.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "transport.delivered -> interpose.u",
+        "endpoint": "to",
+        "expected": [
+          1820.0,
+          -40.0
+        ],
+        "actual": [
+          1820.0,
+          -40.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "interpose.y -> measurements",
+        "endpoint": "from",
+        "expected": [
+          1980.0,
+          -40.0
+        ],
+        "actual": [
+          1980.0,
+          -40.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "interpose.y -> measurements",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          0.0
+        ],
+        "actual": [
+          2250.0,
+          0.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "transport.tick -> tick",
+        "endpoint": "from",
+        "expected": [
+          1645.0,
+          29.0
+        ],
+        "actual": [
+          1645.0,
+          29.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "transport.tick -> tick",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          280.0
+        ],
+        "actual": [
+          2250.0,
+          280.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.s -> telemetry.s",
+        "endpoint": "from",
+        "expected": [
+          780.0,
+          160.0
+        ],
+        "actual": [
+          780.0,
+          160.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.s -> telemetry.s",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.v -> telemetry.v",
+        "endpoint": "from",
+        "expected": [
+          780.0,
+          200.0
+        ],
+        "actual": [
+          780.0,
+          200.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.v -> telemetry.v",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.theta -> telemetry.theta",
+        "endpoint": "from",
+        "expected": [
+          780.0,
+          70.0
+        ],
+        "actual": [
+          780.0,
+          70.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.theta -> telemetry.theta",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.omega -> telemetry.omega",
+        "endpoint": "from",
+        "expected": [
+          780.0,
+          120.0
+        ],
+        "actual": [
+          780.0,
+          120.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.omega -> telemetry.omega",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.tipClearance -> telemetry.tipClearance",
+        "endpoint": "from",
+        "expected": [
+          780.0,
+          -100.0
+        ],
+        "actual": [
+          780.0,
+          -100.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.tipClearance -> telemetry.tipClearance",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.normal -> telemetry.normal",
+        "endpoint": "from",
+        "expected": [
+          780.0,
+          -30.0
+        ],
+        "actual": [
+          780.0,
+          -30.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "core.normal -> telemetry.normal",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.telemetry.busVoltage -> telemetry.busVoltage",
+        "endpoint": "from",
+        "expected": [
+          -790.0,
+          780.5
+        ],
+        "actual": [
+          -790.0,
+          780.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.telemetry.busVoltage -> telemetry.busVoltage",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.telemetry.batteryCurrent -> telemetry.batteryCurrent",
+        "endpoint": "from",
+        "expected": [
+          -790.0,
+          780.5
+        ],
+        "actual": [
+          -790.0,
+          780.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.telemetry.batteryCurrent -> telemetry.batteryCurrent",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.telemetry.SOC -> telemetry.SOC",
+        "endpoint": "from",
+        "expected": [
+          -790.0,
+          780.5
+        ],
+        "actual": [
+          -790.0,
+          780.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.telemetry.SOC -> telemetry.SOC",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.telemetry.batteryTemperature -> telemetry.batteryTemperature",
+        "endpoint": "from",
+        "expected": [
+          -790.0,
+          780.5
+        ],
+        "actual": [
+          -790.0,
+          780.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.telemetry.batteryTemperature -> telemetry.batteryTemperature",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "FL.telemetry.motorCurrent -> telemetry.motorCurrent[1]",
+        "endpoint": "from",
+        "expected": [
+          -240.0,
+          378.5
+        ],
+        "actual": [
+          -240.0,
+          378.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "FL.telemetry.motorCurrent -> telemetry.motorCurrent[1]",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "FL.telemetry.windingTemperature -> telemetry.windingTemperature[1]",
+        "endpoint": "from",
+        "expected": [
+          -240.0,
+          378.5
+        ],
+        "actual": [
+          -240.0,
+          378.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "FL.telemetry.windingTemperature -> telemetry.windingTemperature[1]",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "FL.telemetry.slipVelocity -> telemetry.slipVelocity[1]",
+        "endpoint": "from",
+        "expected": [
+          -240.0,
+          378.5
+        ],
+        "actual": [
+          -240.0,
+          378.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "FL.telemetry.slipVelocity -> telemetry.slipVelocity[1]",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "FR.telemetry.motorCurrent -> telemetry.motorCurrent[2]",
+        "endpoint": "from",
+        "expected": [
+          -240.0,
+          88.5
+        ],
+        "actual": [
+          -240.0,
+          88.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "FR.telemetry.motorCurrent -> telemetry.motorCurrent[2]",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "FR.telemetry.windingTemperature -> telemetry.windingTemperature[2]",
+        "endpoint": "from",
+        "expected": [
+          -240.0,
+          88.5
+        ],
+        "actual": [
+          -240.0,
+          88.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "FR.telemetry.windingTemperature -> telemetry.windingTemperature[2]",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "FR.telemetry.slipVelocity -> telemetry.slipVelocity[2]",
+        "endpoint": "from",
+        "expected": [
+          -240.0,
+          88.5
+        ],
+        "actual": [
+          -240.0,
+          88.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "FR.telemetry.slipVelocity -> telemetry.slipVelocity[2]",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "RL.telemetry.motorCurrent -> telemetry.motorCurrent[3]",
+        "endpoint": "from",
+        "expected": [
+          -240.0,
+          -201.5
+        ],
+        "actual": [
+          -240.0,
+          -201.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "RL.telemetry.motorCurrent -> telemetry.motorCurrent[3]",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "RL.telemetry.windingTemperature -> telemetry.windingTemperature[3]",
+        "endpoint": "from",
+        "expected": [
+          -240.0,
+          -201.5
+        ],
+        "actual": [
+          -240.0,
+          -201.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "RL.telemetry.windingTemperature -> telemetry.windingTemperature[3]",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "RL.telemetry.slipVelocity -> telemetry.slipVelocity[3]",
+        "endpoint": "from",
+        "expected": [
+          -240.0,
+          -201.5
+        ],
+        "actual": [
+          -240.0,
+          -201.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "RL.telemetry.slipVelocity -> telemetry.slipVelocity[3]",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "RR.telemetry.motorCurrent -> telemetry.motorCurrent[4]",
+        "endpoint": "from",
+        "expected": [
+          -240.0,
+          -491.5
+        ],
+        "actual": [
+          -240.0,
+          -491.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "RR.telemetry.motorCurrent -> telemetry.motorCurrent[4]",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "RR.telemetry.windingTemperature -> telemetry.windingTemperature[4]",
+        "endpoint": "from",
+        "expected": [
+          -240.0,
+          -491.5
+        ],
+        "actual": [
+          -240.0,
+          -491.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "RR.telemetry.windingTemperature -> telemetry.windingTemperature[4]",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "RR.telemetry.slipVelocity -> telemetry.slipVelocity[4]",
+        "endpoint": "from",
+        "expected": [
+          -240.0,
+          -491.5
+        ],
+        "actual": [
+          -240.0,
+          -491.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "RR.telemetry.slipVelocity -> telemetry.slipVelocity[4]",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "gate.gateReleased -> telemetry.gateReleased",
+        "endpoint": "from",
+        "expected": [
+          -350.0,
+          810.0
+        ],
+        "actual": [
+          -350.0,
+          810.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "gate.gateReleased -> telemetry.gateReleased",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> telemetry.powerGood",
+        "endpoint": "from",
+        "expected": [
+          -790.0,
+          715.5
+        ],
+        "actual": [
+          -790.0,
+          715.5
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "class": "InclineCartPole.Mechanical.CartPoleSystem",
+        "connection": "power.powerGood -> telemetry.powerGood",
+        "endpoint": "to",
+        "expected": [
+          2250.0,
+          -550.0
+        ],
+        "actual": [
+          2250.0,
+          -550.0
+        ],
+        "max_abs_coordinate_error": 0.0,
+        "status": "PASS"
+      }
+    ],
+    "unresolved_endpoints_not_marked_pass": [],
+    "coordinate_mapping": "从端口iconTransformation（缺省时用transformation）及实例Placement计算；项目图标坐标系为[-100,100]。外部MSL仅采用已核对的显式端口位置。"
+  },
+  "display_observation": {
+    "status": "PASS",
+    "input_bundles": {
+      "plant": "Interfaces.TelemetryIn",
+      "measurements": "Interfaces.MeasurementIn",
+      "command": "Interfaces.CommandIn",
+      "control": "Interfaces.TelemetryControlIn"
+    },
+    "external_output_ports": [],
+    "display_fields_count": 35,
+    "native_display_count": 35,
+    "unique_engineering_assignments_count": 35,
+    "fields": [
+      "acceleration",
+      "balanceActive",
+      "batteryCurrent",
+      "batteryTemperature",
+      "busVoltage",
+      "cartPosition",
+      "cartSpeed",
+      "currentFL",
+      "currentFR",
+      "currentRL",
+      "currentRR",
+      "dataAge",
+      "driveEnabled",
+      "gateReleased",
+      "maxSlipVelocity",
+      "maxWindingTemperature",
+      "measuredAngle",
+      "measuredPosition",
+      "measuredRate",
+      "measuredSpeed",
+      "measurementValid",
+      "mode",
+      "normalFL",
+      "normalFR",
+      "normalRL",
+      "normalRR",
+      "poleAngle",
+      "poleRate",
+      "powerGood",
+      "requestFL",
+      "requestFR",
+      "requestRL",
+      "requestRR",
+      "socPercent",
+      "tipClearance"
+    ],
+    "native_displays": [
+      {
+        "class": "InclineCartPole.Displays.StatusPanel",
+        "instance": "mode",
+        "type": "Modelica.Blocks.Interaction.Show.IntegerValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.StatusPanel",
+        "instance": "acceleration",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.StatusPanel",
+        "instance": "gateReleased",
+        "type": "Modelica.Blocks.Interaction.Show.BooleanValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.StatusPanel",
+        "instance": "powerGood",
+        "type": "Modelica.Blocks.Interaction.Show.BooleanValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.StatusPanel",
+        "instance": "driveEnabled",
+        "type": "Modelica.Blocks.Interaction.Show.BooleanValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.StatusPanel",
+        "instance": "balanceActive",
+        "type": "Modelica.Blocks.Interaction.Show.BooleanValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.MotionPanel",
+        "instance": "cartPosition",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.MotionPanel",
+        "instance": "cartSpeed",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.MotionPanel",
+        "instance": "poleAngle",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.MotionPanel",
+        "instance": "poleRate",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.MotionPanel",
+        "instance": "tipClearance",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.DrivePanel",
+        "instance": "currentFL",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.DrivePanel",
+        "instance": "currentFR",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.DrivePanel",
+        "instance": "currentRL",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.DrivePanel",
+        "instance": "currentRR",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.DrivePanel",
+        "instance": "requestFL",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.DrivePanel",
+        "instance": "requestFR",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.DrivePanel",
+        "instance": "requestRL",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.DrivePanel",
+        "instance": "requestRR",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.SensingPanel",
+        "instance": "measuredPosition",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.SensingPanel",
+        "instance": "measuredSpeed",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.SensingPanel",
+        "instance": "measuredAngle",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.SensingPanel",
+        "instance": "measuredRate",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.SensingPanel",
+        "instance": "dataAge",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.SensingPanel",
+        "instance": "measurementValid",
+        "type": "Modelica.Blocks.Interaction.Show.BooleanValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.ContactPanel",
+        "instance": "normalFL",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.ContactPanel",
+        "instance": "normalFR",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.ContactPanel",
+        "instance": "normalRL",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.ContactPanel",
+        "instance": "normalRR",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.PowerPanel",
+        "instance": "busVoltage",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.PowerPanel",
+        "instance": "batteryCurrent",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.PowerPanel",
+        "instance": "socPercent",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.PowerPanel",
+        "instance": "batteryTemperature",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.PowerPanel",
+        "instance": "maxWindingTemperature",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      },
+      {
+        "class": "InclineCartPole.Displays.PowerPanel",
+        "instance": "maxSlipVelocity",
+        "type": "Modelica.Blocks.Interaction.Show.RealValue"
+      }
+    ],
+    "read_only": true,
+    "field_contract_and_assignment_sets_match": true
+  },
+  "limitations": [
+    "未执行编译或平台UI渲染；这些结果分别由编译/仿真记录及图形验收记录覆盖。",
+    "未对全库每条线的中间路径进行重叠/穿越检查；此报告只验证列明的几何端点。"
+  ],
+  "failures": []
+}

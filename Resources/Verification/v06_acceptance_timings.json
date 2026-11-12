@@ -1,0 +1,116 @@
+{
+  "scope": "Full unchanged final-v0.6 snapshot incl Displays; other UI/compile work paused by parent for this batch",
+  "version": "OpenModelica 1.25.5",
+  "start_time": 0,
+  "stop_time": 10,
+  "tolerance": 1e-06,
+  "output_interval": 0.01,
+  "compiler_flags": "-O3 -flto -fno-semantic-interposition",
+  "command_line_options": "--ignoreCommandLineOptionsAnnotation=true --generateDynamicJacobian=symbolic -d=stateselection,backenddaeinfo,evaluateAllParameters",
+  "binary_sha256": "3854b088aaa05399e457d68cc3ea52b2a5846844f5453823e41250bad4ac97f0",
+  "rows": [
+    {
+      "trial": 0,
+      "wall_seconds": 1.4158055420011806,
+      "cpu_user_seconds": 1.373599,
+      "cpu_system_seconds": 0.046625,
+      "return_code": 0,
+      "command": [
+        "./optimized",
+        "-s=dassl",
+        "-jacobian=coloredSymbolical",
+        "-lv=LOG_STATS",
+        "-initialStepSize=0.00005",
+        "-r=acceptance_run0.mat"
+      ],
+      "mat_bytes": 31541125,
+      "state_events": 40,
+      "time_events": 2001,
+      "steps": 32988,
+      "jacobian_evaluations": 8330
+    },
+    {
+      "trial": 1,
+      "wall_seconds": 1.452988398999878,
+      "cpu_user_seconds": 1.419231,
+      "cpu_system_seconds": 0.040493,
+      "return_code": 0,
+      "command": [
+        "./optimized",
+        "-s=dassl",
+        "-jacobian=coloredSymbolical",
+        "-lv=LOG_STATS",
+        "-initialStepSize=0.00005",
+        "-r=acceptance_run1.mat"
+      ],
+      "mat_bytes": 31541125,
+      "state_events": 40,
+      "time_events": 2001,
+      "steps": 32988,
+      "jacobian_evaluations": 8330
+    },
+    {
+      "trial": 2,
+      "wall_seconds": 1.4616563900017354,
+      "cpu_user_seconds": 1.4239089999999996,
+      "cpu_system_seconds": 0.045211,
+      "return_code": 0,
+      "command": [
+        "./optimized",
+        "-s=dassl",
+        "-jacobian=coloredSymbolical",
+        "-lv=LOG_STATS",
+        "-initialStepSize=0.00005",
+        "-r=acceptance_run2.mat"
+      ],
+      "mat_bytes": 31541125,
+      "state_events": 40,
+      "time_events": 2001,
+      "steps": 32988,
+      "jacobian_evaluations": 8330
+    },
+    {
+      "trial": 3,
+      "wall_seconds": 1.442770821002341,
+      "cpu_user_seconds": 1.4155540000000002,
+      "cpu_system_seconds": 0.035583000000000004,
+      "return_code": 0,
+      "command": [
+        "./optimized",
+        "-s=dassl",
+        "-jacobian=coloredSymbolical",
+        "-lv=LOG_STATS",
+        "-initialStepSize=0.00005",
+        "-r=acceptance_run3.mat"
+      ],
+      "mat_bytes": 31541125,
+      "state_events": 40,
+      "time_events": 2001,
+      "steps": 32988,
+      "jacobian_evaluations": 8330
+    },
+    {
+      "trial": 4,
+      "wall_seconds": 1.4089050289985607,
+      "cpu_user_seconds": 1.353707,
+      "cpu_system_seconds": 0.060957999999999984,
+      "return_code": 0,
+      "command": [
+        "./optimized",
+        "-s=dassl",
+        "-jacobian=coloredSymbolical",
+        "-lv=LOG_STATS",
+        "-initialStepSize=0.00005",
+        "-r=acceptance_run4.mat"
+      ],
+      "mat_bytes": 31541125,
+      "state_events": 40,
+      "time_events": 2001,
+      "steps": 32988,
+      "jacobian_evaluations": 8330
+    }
+  ],
+  "median_wall_seconds": 1.442770821002341,
+  "min_wall_seconds": 1.4089050289985607,
+  "max_wall_seconds": 1.4616563900017354
+}

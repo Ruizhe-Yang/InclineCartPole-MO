@@ -1,0 +1,91 @@
+{
+  "auxiliary": {
+    "max_power_balance_residual_W": 1.665334536937735e-16,
+    "max_integral_energy_residual_J": 4.016297621732335e-10,
+    "zero_input_max_current_A": 0.0,
+    "RC_time_constant_s": 0.00357142857143,
+    "discharge_checks": [
+      {
+        "time_s": 0.061,
+        "measured_V": 3.778918725555687,
+        "RC_exact_V": 3.7789187072398542,
+        "absolute_error_V": 1.8315832850390734e-08
+      },
+      {
+        "time_s": 0.065,
+        "measured_V": 1.232984837188901,
+        "RC_exact_V": 1.2329848196959325,
+        "absolute_error_V": 1.7492968407140097e-08
+      },
+      {
+        "time_s": 0.07,
+        "measured_V": 0.3040503276219897,
+        "RC_exact_V": 0.30405031312327596,
+        "absolute_error_V": 1.4498713729604873e-08
+      },
+      {
+        "time_s": 0.08,
+        "measured_V": 0.01848931969171678,
+        "RC_exact_V": 0.01848931858226427,
+        "absolute_error_V": 1.109452512498832e-09
+      },
+      {
+        "time_s": 0.1,
+        "measured_V": 6.837178172778216e-05,
+        "RC_exact_V": 6.837098032800172e-05,
+        "absolute_error_V": 8.013997804397991e-10
+      }
+    ],
+    "hysteresis_checks": [
+      {
+        "time_s": 0.13,
+        "input_available": false
+      },
+      {
+        "time_s": 0.15,
+        "input_available": true
+      },
+      {
+        "time_s": 0.17,
+        "input_available": true
+      },
+      {
+        "time_s": 0.19,
+        "input_available": false
+      }
+    ]
+  },
+  "sensors": {
+    "position": {
+      "off_frontend_span": 0.0,
+      "frontend_at_restart": 0.05900000000010705,
+      "frontend_after_10ms": 0.108998183201341,
+      "off_rate_estimate_max": 0.0
+    },
+    "angle": {
+      "off_frontend_span": 0.0,
+      "frontend_at_restart": 0.3180000000002141,
+      "frontend_after_10ms": 0.41799636640268206,
+      "off_rate_estimate_max": 0.0
+    },
+    "load": {
+      "off_frontend_span": 0.0,
+      "frontend_at_restart": 5.057999990161713,
+      "frontend_after_10ms": 5.107730476806515
+    }
+  },
+  "planar": {
+    "state_samples": 500,
+    "max_mechanical_power_residual_W": 3.730349362740526e-14,
+    "buffer_height_m": 0.12,
+    "buffer_force_N": -4,
+    "moment_change_Nm": 0.48,
+    "normal_force_changes_FL_FR_RL_RR_N": [
+      -0.7058823529411764,
+      -0.7058823529411764,
+      0.7058823529411764,
+      0.7058823529411764
+    ],
+    "normal_force_sum_change_N": 0.0
+  }
+}

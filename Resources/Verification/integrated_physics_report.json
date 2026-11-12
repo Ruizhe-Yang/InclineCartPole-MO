@@ -1,0 +1,585 @@
+{
+  "result_file": "/workspace/scratch/afb6551b309f/analysis/v06_first/run0.mat",
+  "baseline_file": "/workspace/scratch/afb6551b309f/analysis/baseline/baseline_run0.mat",
+  "sample_count_with_event_points": 4865,
+  "nonfinite_dynamic_values": 0,
+  "physical_kpis": {
+    "cartPole.core.s": {
+      "min": -0.0006619725956254357,
+      "max": 0.6700244419891189,
+      "final": 0.006114501578032944
+    },
+    "cartPole.core.v": {
+      "min": -0.779217185199378,
+      "max": 1.5972321565860697,
+      "final": -0.0035972888536431155
+    },
+    "cartPole.core.theta": {
+      "min": 1.4586613570119682,
+      "max": 6.322934218747494,
+      "final": 6.283374622000478
+    },
+    "cartPole.core.omega": {
+      "min": -6.857898287195543,
+      "max": 10.610152463121388,
+      "final": 0.0006991247303986957
+    },
+    "cartPole.core.a": {
+      "min": -6.103578645918758,
+      "max": 5.542453568741646,
+      "final": 0.001245453709156118
+    },
+    "cartPole.core.tipClearance": {
+      "min": 0.10002393584564823,
+      "max": 0.9999996244323516,
+      "final": 0.9982801811647706
+    },
+    "cartPole.core.Ntotal": {
+      "min": 19.588676257023803,
+      "max": 26.44910459725678,
+      "final": 21.49986709527074
+    },
+    "cartPole.core.energy": {
+      "min": -0.442688745848028,
+      "max": 3.208148086903531,
+      "final": 0.45296546554697814
+    },
+    "cartPole.power.cell.SOC": {
+      "min": 0.7996298489186261,
+      "max": 0.8,
+      "final": 0.7996298489186261
+    },
+    "cartPole.power.link.v": {
+      "min": 0.0,
+      "max": 12.008207647242147,
+      "final": 11.98772416767854
+    },
+    "cartPole.power.auxiliary.V5": {
+      "min": 0.0,
+      "max": 5.0,
+      "final": 5.0
+    },
+    "cartPole.power.core.T": {
+      "min": 293.15,
+      "max": 293.1522315877225,
+      "final": 293.1522315877225
+    },
+    "cartPole.power.shell.T": {
+      "min": 293.15,
+      "max": 293.1532620470765,
+      "final": 293.1532620470765
+    },
+    "cartPole.frame.T": {
+      "min": 293.15,
+      "max": 293.20165574716,
+      "final": 293.20165574716
+    },
+    "controller.readiness.age": {
+      "min": 0.0,
+      "max": 0.010500000000000398,
+      "final": 0.01000000000016854
+    },
+    "cartPole.gate.stroke": {
+      "min": 0.0,
+      "max": 0.0060000001006010285,
+      "final": 0.0060000001006010285
+    },
+    "cartPole.core.normal[1]": {
+      "min": 1.290332251716346,
+      "max": 9.245786274216327,
+      "final": 4.927606650414937
+    },
+    "cartPole.core.normal[2]": {
+      "min": 1.290332251716346,
+      "max": 9.245786274216327,
+      "final": 4.927606650414937
+    },
+    "cartPole.core.normal[3]": {
+      "min": 1.8725698745285708,
+      "max": 11.289967069586577,
+      "final": 5.822326897220433
+    },
+    "cartPole.core.normal[4]": {
+      "min": 1.8725698745285708,
+      "max": 11.289967069586577,
+      "final": 5.822326897220433
+    },
+    "cartPole.FL.driveUnit.winding.T": {
+      "min": 293.15,
+      "max": 293.51705582620093,
+      "final": 293.4044746684645
+    },
+    "cartPole.FL.driveUnit.shell.T": {
+      "min": 293.15,
+      "max": 293.2864727896084,
+      "final": 293.2864727896084
+    },
+    "cartPole.FL.driveUnit.driver.T": {
+      "min": 293.15,
+      "max": 293.2458341329063,
+      "final": 293.2458341329063
+    },
+    "cartPole.FL.tire.T": {
+      "min": 293.15,
+      "max": 293.17102079841976,
+      "final": 293.17102079841976
+    },
+    "cartPole.FL.driveUnit.inductance.i": {
+      "min": -1.9964315376533655,
+      "max": 1.0738922664384616,
+      "final": 0.16727077609091692
+    },
+    "cartPole.FL.contact.slip": {
+      "min": -0.036505385079147246,
+      "max": 0.060974947853321866,
+      "final": 3.582236373560286e-06
+    },
+    "cartPole.FL.contact.margin": {
+      "min": 0.5294266940690188,
+      "max": 4.986996681560635,
+      "final": 4.003259900615682
+    },
+    "cartPole.FL.contact.loss": {
+      "min": 0.0,
+      "max": 0.1048239319971157,
+      "final": 5.0834039801027276e-05
+    },
+    "cartPole.FR.driveUnit.winding.T": {
+      "min": 293.15,
+      "max": 293.5170558262009,
+      "final": 293.40447466846445
+    },
+    "cartPole.FR.driveUnit.shell.T": {
+      "min": 293.15,
+      "max": 293.28647278960835,
+      "final": 293.28647278960835
+    },
+    "cartPole.FR.driveUnit.driver.T": {
+      "min": 293.15,
+      "max": 293.2458341329063,
+      "final": 293.2458341329063
+    },
+    "cartPole.FR.tire.T": {
+      "min": 293.15,
+      "max": 293.17102079841976,
+      "final": 293.17102079841976
+    },
+    "cartPole.FR.driveUnit.inductance.i": {
+      "min": -1.9964315376533655,
+      "max": 1.0738922664384616,
+      "final": 0.16727077609091695
+    },
+    "cartPole.FR.contact.slip": {
+      "min": -0.03650538507914636,
+      "max": 0.06097494785412238,
+      "final": 3.582236373580669e-06
+    },
+    "cartPole.FR.contact.margin": {
+      "min": 0.5294266940690342,
+      "max": 4.986996681560636,
+      "final": 4.003259900615685
+    },
+    "cartPole.FR.contact.loss": {
+      "min": 0.0,
+      "max": 0.10482393199711484,
+      "final": 5.0834039801027676e-05
+    },
+    "cartPole.RL.driveUnit.winding.T": {
+      "min": 293.15,
+      "max": 293.64840437824296,
+      "final": 293.49162722674834
+    },
+    "cartPole.RL.driveUnit.shell.T": {
+      "min": 293.15,
+      "max": 293.33171292076236,
+      "final": 293.33171292076236
+    },
+    "cartPole.RL.driveUnit.driver.T": {
+      "min": 293.15,
+      "max": 293.2550486581418,
+      "final": 293.2550486581418
+    },
+    "cartPole.RL.tire.T": {
+      "min": 293.15,
+      "max": 293.1716182073145,
+      "final": 293.1716182073145
+    },
+    "cartPole.RL.driveUnit.inductance.i": {
+      "min": -0.8559549010854316,
+      "max": 2.3868755875793046,
+      "final": 0.19768970279436296
+    },
+    "cartPole.RL.contact.slip": {
+      "min": -0.022341455545705546,
+      "max": 0.04891586672259759,
+      "final": 5.588512121712606e-06
+    },
+    "cartPole.RL.contact.margin": {
+      "min": 1.0565390379032487,
+      "max": 5.625255938789753,
+      "final": 4.729773618160311
+    },
+    "cartPole.RL.contact.loss": {
+      "min": 0.0,
+      "max": 0.11993053719756398,
+      "final": 6.0110219651788585e-05
+    },
+    "cartPole.RR.driveUnit.winding.T": {
+      "min": 293.15,
+      "max": 293.64840437824296,
+      "final": 293.49162722674834
+    },
+    "cartPole.RR.driveUnit.shell.T": {
+      "min": 293.15,
+      "max": 293.33171292076236,
+      "final": 293.33171292076236
+    },
+    "cartPole.RR.driveUnit.driver.T": {
+      "min": 293.15,
+      "max": 293.2550486581418,
+      "final": 293.2550486581418
+    },
+    "cartPole.RR.tire.T": {
+      "min": 293.15,
+      "max": 293.1716182073145,
+      "final": 293.1716182073145
+    },
+    "cartPole.RR.driveUnit.inductance.i": {
+      "min": -0.8559549010854316,
+      "max": 2.3868755875793055,
+      "final": 0.1976897027943629
+    },
+    "cartPole.RR.contact.slip": {
+      "min": -0.022341455545705546,
+      "max": 0.04891586672099917,
+      "final": 5.58851212171434e-06
+    },
+    "cartPole.RR.contact.margin": {
+      "min": 1.0565390379032467,
+      "max": 5.6252559387897545,
+      "final": 4.729773618160311
+    },
+    "cartPole.RR.contact.loss": {
+      "min": 0.0,
+      "max": 0.11993053719688991,
+      "final": 6.0110219651788625e-05
+    }
+  },
+  "tail_last_2s": {
+    "max_abs_pole_angle_deg": 0.030649252704746756,
+    "final_pole_angle_deg": 0.010846940236360923,
+    "max_abs_cart_position_m": 0.009099986185043802,
+    "final_cart_position_m": 0.006114501578032944,
+    "max_abs_cart_velocity_mps": 0.0039058403216315706
+  },
+  "baseline_tail_last_2s": {
+    "max_abs_pole_angle_deg": 0.030625383634602543,
+    "final_pole_angle_deg": 0.011171627748988186,
+    "max_abs_cart_position_m": 0.009095035683100243,
+    "final_cart_position_m": 0.00609544726148982,
+    "max_abs_cart_velocity_mps": 0.0039435901429944005
+  },
+  "event_timeline": {
+    "mission.release": [
+      {
+        "time_s": 0.5000000001500016,
+        "value": 1.0
+      }
+    ],
+    "cartPole.power.supervisor.bypassClosed": [
+      {
+        "time_s": 0.1200000001120003,
+        "value": 1.0
+      }
+    ],
+    "cartPole.power.powerGood": [
+      {
+        "time_s": 0.1200000001120003,
+        "value": 1.0
+      }
+    ],
+    "cartPole.power.auxiliary.inputAvailable": [
+      {
+        "time_s": 0.0005733221107590661,
+        "value": 1.0
+      }
+    ],
+    "cartPole.gate.energized": [
+      {
+        "time_s": 0.5100000003020063,
+        "value": 1.0
+      },
+      {
+        "time_s": 0.5211163531794203,
+        "value": 0.0
+      }
+    ],
+    "cartPole.gate.gateReleased": [
+      {
+        "time_s": 0.5211163531794203,
+        "value": 1.0
+      }
+    ],
+    "cartPole.measurements.valid": [
+      {
+        "time_s": 0.13049999999999998,
+        "value": 1.0
+      }
+    ],
+    "controller.readiness.permit": [
+      {
+        "time_s": 0.5211163531794203,
+        "value": 1.0
+      }
+    ],
+    "controller.supervisor.sequence.mode": [
+      {
+        "time_s": 0.5305000000000003,
+        "value": 2.0
+      },
+      {
+        "time_s": 0.6805000000000004,
+        "value": 3.0
+      },
+      {
+        "time_s": 2.4604999999999917,
+        "value": 4.0
+      },
+      {
+        "time_s": 2.8404999999999836,
+        "value": 5.0
+      }
+    ],
+    "controller.command.drive": [
+      {
+        "time_s": 0.5305000000000003,
+        "value": 1.0
+      }
+    ]
+  },
+  "mode_transitions_baseline": [
+    {
+      "time_s": 0.5305000000000003,
+      "value": 2.0
+    },
+    {
+      "time_s": 0.6805000000000004,
+      "value": 3.0
+    },
+    {
+      "time_s": 2.4604999999999917,
+      "value": 4.0
+    },
+    {
+      "time_s": 2.8404999999999836,
+      "value": 5.0
+    }
+  ],
+  "power_residuals_W": {
+    "cartPole.core.powerResidual": {
+      "max_abs": 8.309325449928906e-15,
+      "RMS": 4.706749746724416e-16
+    },
+    "cartPole.gate.powerResidual": {
+      "max_abs": 1.823949926640575e-16,
+      "RMS": 5.56275806615073e-18
+    },
+    "cartPole.power.auxiliary.powerResidual": {
+      "max_abs": 2.220446049250313e-16,
+      "RMS": 8.116251226169458e-18
+    },
+    "cartPole.FL.driveUnit.bridge.portResidual": {
+      "max_abs": 2.0903417885520525e-15,
+      "RMS": 1.9804895992327507e-16
+    },
+    "cartPole.FR.driveUnit.bridge.portResidual": {
+      "max_abs": 2.0920765120280294e-15,
+      "RMS": 2.2119497564901087e-16
+    },
+    "cartPole.RL.driveUnit.bridge.portResidual": {
+      "max_abs": 2.482389294122811e-15,
+      "RMS": 2.6152944488043017e-16
+    },
+    "cartPole.RR.driveUnit.bridge.portResidual": {
+      "max_abs": 3.5371011675167097e-15,
+      "RMS": 2.875840050053087e-16
+    }
+  },
+  "display_checks": {
+    "displays.motionPanel.cartPosition.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.006114501578032944
+    },
+    "displays.motionPanel.cartSpeed.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": -0.0035972888536431155
+    },
+    "displays.motionPanel.poleAngle.showNumber": {
+      "max_abs_error": 2.842170943040401e-14,
+      "final_value": 0.010846940236360923
+    },
+    "displays.motionPanel.poleRate.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.040056896405066794
+    },
+    "displays.motionPanel.tipClearance.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.9982801811647706
+    },
+    "displays.sensingPanel.measuredPosition.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.00615
+    },
+    "displays.sensingPanel.measuredSpeed.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": -0.0036000000000000003
+    },
+    "displays.sensingPanel.measuredAngle.showNumber": {
+      "max_abs_error": 2.842170943040401e-14,
+      "final_value": 0.010986328124968038
+    },
+    "displays.sensingPanel.measuredRate.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.040107045659157625
+    },
+    "displays.sensingPanel.dataAge.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 10.00000000016854
+    },
+    "displays.sensingPanel.measurementValid.showActive": {
+      "max_abs_error": 0.0,
+      "final_value": 1.0
+    },
+    "displays.drivePanel.currentFL.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.16727077609091692
+    },
+    "displays.drivePanel.requestFL.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.16727320695820255
+    },
+    "displays.contactPanel.normalFL.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 4.927606650414937
+    },
+    "displays.drivePanel.currentFR.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.16727077609091695
+    },
+    "displays.drivePanel.requestFR.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.16727320695820255
+    },
+    "displays.contactPanel.normalFR.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 4.927606650414937
+    },
+    "displays.drivePanel.currentRL.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.19768970279436296
+    },
+    "displays.drivePanel.requestRL.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.19769269009896764
+    },
+    "displays.contactPanel.normalRL.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 5.822326897220433
+    },
+    "displays.drivePanel.currentRR.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.1976897027943629
+    },
+    "displays.drivePanel.requestRR.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.19769269009896764
+    },
+    "displays.contactPanel.normalRR.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 5.822326897220433
+    },
+    "displays.powerPanel.busVoltage.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 11.98772416767854
+    },
+    "displays.powerPanel.batteryCurrent.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 0.11303805405641537
+    },
+    "displays.powerPanel.socPercent.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 79.9629848918626
+    },
+    "displays.powerPanel.batteryTemperature.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 20.00223158772252
+    },
+    "displays.powerPanel.maxWindingTemperature.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 20.341627226748358
+    },
+    "displays.powerPanel.maxSlipVelocity.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 5.58851212171434e-06
+    },
+    "displays.statusPanel.mode.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": 5.0
+    },
+    "displays.statusPanel.acceleration.showNumber": {
+      "max_abs_error": 0.0,
+      "final_value": -0.02376660302348481
+    },
+    "displays.statusPanel.gateReleased.showActive": {
+      "max_abs_error": 0.0,
+      "final_value": 1.0
+    },
+    "displays.statusPanel.powerGood.showActive": {
+      "max_abs_error": 0.0,
+      "final_value": 1.0
+    },
+    "displays.statusPanel.driveEnabled.showActive": {
+      "max_abs_error": 0.0,
+      "final_value": 1.0
+    },
+    "displays.statusPanel.balanceActive.showActive": {
+      "max_abs_error": 0.0,
+      "final_value": 1.0
+    }
+  },
+  "display_count": 35,
+  "domain_summary": {
+    "minimum_wheel_normal_N": 1.290332251716346,
+    "minimum_traction_margin_N": 0.5294266940690188,
+    "minimum_tip_clearance_m": 0.10002393584564823,
+    "maximum_abs_cart_position_m": 0.6700244419891189,
+    "buffer_contact_occurs": false,
+    "maximum_thermal_node_temperature_C": 20.49840437824298,
+    "any_inhibited_state": false,
+    "maximum_measured_age_ms": 10.500000000000398
+  },
+  "baseline_comparison_0p01s_grid": {
+    "cartPole.core.s": {
+      "max_abs_difference": 2.500652519450003e-05,
+      "final_difference": 1.9054316543124297e-05
+    },
+    "cartPole.core.v": {
+      "max_abs_difference": 0.0001491615627536497,
+      "final_difference": -7.79329082565899e-06
+    },
+    "cartPole.core.theta": {
+      "max_abs_difference": 1.990110106664389e-05,
+      "final_difference": -5.6668661354564165e-06
+    },
+    "cartPole.core.omega": {
+      "max_abs_difference": 0.00047433893429151366,
+      "final_difference": 4.112262533995472e-05
+    },
+    "cartPole.power.cell.SOC": {
+      "max_abs_difference": 1.506899496295233e-07,
+      "final_difference": -1.496702229930591e-07
+    }
+  },
+  "failures": [],
+  "status": "PASS"
+}

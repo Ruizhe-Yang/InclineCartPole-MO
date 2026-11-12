@@ -1,0 +1,32 @@
+[
+  {
+    "name": "gate_jammed",
+    "returncode": 0,
+    "command": [
+      "/workspace/scratch/afb6551b309f/analysis/v06_first/v06",
+      "-s=dassl",
+      "-jacobian=coloredSymbolical",
+      "-initialStepSize=0.00005",
+      "-lv=LOG_STATS",
+      "-override=cartPole.gate.jammed=true",
+      "-r=/workspace/scratch/afb6551b309f/analysis/v06_checks/gate_jammed.mat"
+    ],
+    "accuracy_check_wall_s_not_acceptance_benchmark": 0.8668180130007386,
+    "result_bytes": 32165721
+  },
+  {
+    "name": "tolerance_1e7",
+    "returncode": 0,
+    "command": [
+      "/workspace/scratch/afb6551b309f/analysis/v06_first/v06",
+      "-s=dassl",
+      "-jacobian=coloredSymbolical",
+      "-initialStepSize=0.00005",
+      "-lv=LOG_STATS",
+      "-override=tolerance=1e-7",
+      "-r=/workspace/scratch/afb6551b309f/analysis/v06_checks/tolerance_1e7.mat"
+    ],
+    "accuracy_check_wall_s_not_acceptance_benchmark": 2.9763397440001427,
+    "result_bytes": 32519097
+  }
+]

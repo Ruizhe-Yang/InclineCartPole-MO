@@ -1,0 +1,60 @@
+{
+  "standard": {
+    "cartPole.power.supervisor.bypassClosed": {
+      "initial": 0.0,
+      "transitions": [
+        [
+          0.12000000011200077,
+          1.0
+        ]
+      ]
+    },
+    "cartPole.powerGood": {
+      "initial": 0.0,
+      "transitions": [
+        [
+          0.12000000011200077,
+          1.0
+        ]
+      ]
+    },
+    "cartPole.gateReleased": {
+      "initial": 0.0,
+      "transitions": [
+        [
+          0.5211163531769971,
+          1.0
+        ]
+      ]
+    }
+  },
+  "optimized": {
+    "cartPole.power.supervisor.bypassClosed": {
+      "initial": 0.0,
+      "transitions": [
+        [
+          0.12000000011200138,
+          1.0
+        ]
+      ]
+    },
+    "cartPole.powerGood": {
+      "initial": 0.0,
+      "transitions": [
+        [
+          0.12000000011200138,
+          1.0
+        ]
+      ]
+    },
+    "cartPole.gateReleased": {
+      "initial": 0.0,
+      "transitions": [
+        [
+          0.5211161440237324,
+          1.0
+        ]
+      ]
+    }
+  }
+}

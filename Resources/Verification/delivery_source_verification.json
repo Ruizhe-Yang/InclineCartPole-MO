@@ -1,0 +1,419 @@
+{
+  "files_checked": 68,
+  "all_model_logic_identical_to_performance_snapshot": true,
+  "mismatches": [],
+  "final_build_exact_source_hashes_match": true,
+  "final_build_success": true,
+  "final_build_runtime_s": 1.4362552080019668,
+  "method": "Modelica lexical token comparison retaining strings, numeric literals and identifiers; removes annotation expressions, comments and external whitespace only. Includes every .mo file.",
+  "files": [
+    {
+      "file": "Control/BalanceLoop.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "89c7d3483227a8977cc9bfe5631b86a0320991ec82edefc1551fe28c72b51dc3",
+      "logic_sha256": "8210666abd0028c69c368fe549fc72470c566f9feaa4ec53f2c6716c6c38c9ca"
+    },
+    {
+      "file": "Control/CartController.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "7e18010d559f91e7576360cddcbadbfd2093a32787577a77f4e7288d1d5ef5b7",
+      "logic_sha256": "76ffd10379727f4ca23b9746df6253e5da975bcea6356b32bce0c7c08000cd74"
+    },
+    {
+      "file": "Control/CurrentAllocator.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "379170e243c4b2f97ec0f599c97fd09d65e28b49443119f3c5404d630a6d1296",
+      "logic_sha256": "a36fd2ec958bac1be3d84dc03019b38056853fc1be296c33b008a8c3bcce3bda"
+    },
+    {
+      "file": "Control/EnergySwingUp.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "8f01a290a72d6a30358d72df0970ff50491aafcd719a4252bbc521cbb2e632ff",
+      "logic_sha256": "41a9681619f2864b44226f73492bed0d9d50077e9ad69b69db03031bf7a3e6b1"
+    },
+    {
+      "file": "Control/LogicUnits/AccelerationSelector.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "c0c34c6246c38f2628f078543804ee32ec474841b4e110c7abde24fbc07c8dbb",
+      "logic_sha256": "913303fea59a8768179c0ba359582c4315178e1d1c5d1f9e95d42aa2af4cb681"
+    },
+    {
+      "file": "Control/LogicUnits/BalanceRegion.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "4de1ff7afec71e31e2ff524166014bf16fd5170b262358ddec2023b19b917857",
+      "logic_sha256": "3aeeef3a2427b972b0353b7459c51ed88c02deb7d282806a85431e0cc6a09aae"
+    },
+    {
+      "file": "Control/LogicUnits/CaptureRegion.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "03ad6140b68e9cc2a5c98bc41d34bdf2f232ecdb30a0bb8dc8c3564577bf335b",
+      "logic_sha256": "0eccb3c08c7faea331d93c14fecd0889c7bec8d6df9870e2a02dff90f0b77067"
+    },
+    {
+      "file": "Control/LogicUnits/DwellQualifier.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "0ea58596c83f3bb22e3040877d9b2e2a68b8efae8e20f6b283067c44f660d53b",
+      "logic_sha256": "2f1a846cf0df95d5367a1daf29edf2e7ce954f76d413dd911281d9dfb25fb4be"
+    },
+    {
+      "file": "Control/LogicUnits/MeasurementPermit.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "5354378d4cc0a6ad35a3ed0bbe7f6dba211e50f8ebb4cb5206eae30c60b273fb",
+      "logic_sha256": "c07d4acc526a18159ee4cbc2bd38ce45f1fea30649c53783e4e616f69913a111"
+    },
+    {
+      "file": "Control/LogicUnits/ModeSequence.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "edd432bcb94a8d38c1a3d3ea1e1b30cd2b6d93b2d67e9745e6cce0ce00021623",
+      "logic_sha256": "216430004dfdb6fbd0045f12fb3f66786e7410bbc26b14f13663538da9bfc0d8"
+    },
+    {
+      "file": "Control/LogicUnits/StepResidence.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "e3329491119fcc4fc302c3b7452d1c98e4812d033ad274c19d006720decc4277",
+      "logic_sha256": "d128318f405c432a5071b625d20dd30236296f7b2399ccca238359be1ba74172"
+    },
+    {
+      "file": "Control/LogicUnits/WrappedAngle.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "06319d1ca5fbedf3a18a1cf07baedbce3fd4b018ef30bb04b8ae725ab093a7d5",
+      "logic_sha256": "0458de21109c29f12f833e538b535d3586053165d02d4596bae28e6be1695953"
+    },
+    {
+      "file": "Control/LogicUnits/package.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "3aaa50582ef03a4e1f2d1514c87285655510e208621c9e6f7cf0dd21d5e32d71",
+      "logic_sha256": "f66066e12788768acdaebf3741d3f625d416e31c29c66a7dc76bef74a767f3ad"
+    },
+    {
+      "file": "Control/ModeSupervisor.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "c98fc9f5c02244a839d82c90fbf7e4e861f99a5087954f8732dd3c25c62afd41",
+      "logic_sha256": "3da55b72b13fe34f302375952bd6bde821f33ec6865e81ba8e46c7a74c5dcc8f"
+    },
+    {
+      "file": "Control/package.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "a62014d9c36b5f26e31a23d7ce65dec416ed1e675e073f34b71eff99be357538",
+      "logic_sha256": "6cb1b54c7dc93320de6b97ae3dab35148ef8780337eba978279a016aab6b24fd"
+    },
+    {
+      "file": "Displays/ContactPanel.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "6b086e786681e85656ad8693086a1955cab48a8645ab1233db349d18dc45bdbe",
+      "logic_sha256": "d0e98c34ee6411619aa0cb1d50b4141c2831122074d33b6348ea55c0e16e45c9"
+    },
+    {
+      "file": "Displays/DrivePanel.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "20143d88674b41c8f544b4ea4a59c757da0a2e1443958e83ec267d792fcd6c12",
+      "logic_sha256": "983e5d589232ed2ee423a48c78273fd7f5fca0f7d241ac6fe4bf67401c82296e"
+    },
+    {
+      "file": "Displays/EngineeringValues.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "cb644d416beb02dbf45706438a869bcb439d8708fbc8388e06f626f6b5b72676",
+      "logic_sha256": "cf7f5511de99102f37f21286ed47c61cf68a2cb315bcf51f5a56984493cc7618"
+    },
+    {
+      "file": "Displays/MotionPanel.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "e8fec5b4f43cb353c4aa59271aa7185e9c665e6c62d3e63eb39ee287baecd177",
+      "logic_sha256": "986892b654c3cd0dcf8a8e2194d3b2a55c29f18e03ce5d85400ea774d2bd5ecc"
+    },
+    {
+      "file": "Displays/PowerPanel.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "52c0c17dbb387a97fa3fc521718d0ccf8bd915b32444967ca7e128b6657b4194",
+      "logic_sha256": "a6a1949cd5f968b18e07a42bf4246f07b48e0839ea4fa189c85e66baab5bc8a6"
+    },
+    {
+      "file": "Displays/RunDisplay.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "84b6c793355274f68a975559b331bc85c5c1a375e3580497bebf2bc81ec5a986",
+      "logic_sha256": "f177b78372a9fbcb6c38929ca7491e4d92d2aee5021b94bf7a7bbecdf7d109a2"
+    },
+    {
+      "file": "Displays/SensingPanel.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "33010d3a072fee0a0a3c236a74ba762e5150f544a6f3175e0593c7620c744c83",
+      "logic_sha256": "2c0b904197b3eabc4162311c2507999d38fa38c04c47c29738d3b4b334202746"
+    },
+    {
+      "file": "Displays/StatusPanel.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "1713f054cb9372ab60becc8cd654a35f0c0aef62b4f5112485b72740cbc557d9",
+      "logic_sha256": "a6c816ebab0ff0f17a760e9290fd1edd227f33b7547f818b93c4159930710e8b"
+    },
+    {
+      "file": "Displays/package.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "8a9986afb6b91fc46e13452bc4d9990a2e54618f7fbd030e9c250b19758de42c",
+      "logic_sha256": "d5a445bf47dc68518dfac18134236770a38f106bde76d77d49b8d67ed60ba8ad"
+    },
+    {
+      "file": "Electrical/AuxiliaryLoad.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "a5c08c5d272aa98aa2b1aa1a2c42243674ed4ecbc1d0958e578a5b2eb1d0451c",
+      "logic_sha256": "af875b876aedb6f7d42f9c7df64f74cce88f9e52ce619899cbe3453150cf6364"
+    },
+    {
+      "file": "Electrical/AveragePowerBridge.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "d0844a16ac795f0fa214b464b2fe6329a74818baba3afd4188476ec1000c1d60",
+      "logic_sha256": "5514b71d514117074c7a4bc1efe87e2597552ab6f23aad41c93e126f3680460a"
+    },
+    {
+      "file": "Electrical/BatterySupply.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "6f0048bf9dea5f51f5eec90ac5d1d532c5d70e3855a8eaa5c6284b3f3b02b454",
+      "logic_sha256": "f0a22e13aaeb19e6c492cea11b5d7f257275b23d646ee87e222f9ff2041d0b8b"
+    },
+    {
+      "file": "Electrical/ObservedCellStack.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "e717bede23f8b21559edd5f30e863e87bb91e485d86162b9db97acf04e3c566e",
+      "logic_sha256": "ba28e0bb8e576c8676f0f3b11d57b7cc37c38a8ddaf7d3ef2726cf1448b6a7b7"
+    },
+    {
+      "file": "Electrical/SupplySupervisor.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "48f8112402ea593206a8ff8516dc5237b0e892cd815e25a818bfec1ed32d8684",
+      "logic_sha256": "a07975163223f3b4bd146f77b43efd67b8261ee94779c8708cfa5dfd75391a62"
+    },
+    {
+      "file": "Electrical/WheelDrive.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "43ee9453aa6d0f8367049961d4ada435808e60543ff40d00e93cda917f36aa39",
+      "logic_sha256": "c70db397dafd0f9e373bc35490aa533a4eca12c7af6210706d4e20a9fce7d735"
+    },
+    {
+      "file": "Electrical/package.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "46cfc90cab20cefd6630752c3fa82dcaa1ec57dce49588e7f1c1cf668a333ab3",
+      "logic_sha256": "363493c1a9befcec429a05ed2e023bc7a3d42d7379ead67a37e2ed0f1bbb8be5"
+    },
+    {
+      "file": "Environment/Environment.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "956e0dbfcd6b28ea9702724ebf6c3a2d05d01d09914ad7b729b5af64f9788e82",
+      "logic_sha256": "1fa9e398dff0eaefb75360dbd6ee78e216131756852266c97801e61f3c8b36a9"
+    },
+    {
+      "file": "Environment/package.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "956e3d640e3d02ffdb66e7960930da21ea4b7eaa3fe40f2efed5724f118d5817",
+      "logic_sha256": "4888a295b81c68171f2719bfb364dcca97a2cced41674e62b765bd2b07184f95"
+    },
+    {
+      "file": "Interfaces/BatteryBoundary.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "4e64e967025c7f50908caf4763ce2cc234719a75e5747d39f3132ad5f4666d56",
+      "logic_sha256": "5298f2c29d3187445649217628d606c5d583e3b6143ac7a39ec37bb92d3d4ec2"
+    },
+    {
+      "file": "Interfaces/BatteryTelemetryOut.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "2324d80fdf18a794a3dcc40ba87f11e6e0333c318c924ef990ed927d7bb778f5",
+      "logic_sha256": "f30b2d7982e30164c33f9e525be0d49bf93cf69c68cfc3c2064f6736fe3d2196"
+    },
+    {
+      "file": "Interfaces/CommandIn.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "4a11c62be821147e800a06f3bb7ed921b194fa1c726102bb7d0e9b9a7e8c06a3",
+      "logic_sha256": "3ca2fb37846e14393f74fdd122dfd852c7ad10c310490cf819da1566221c520e"
+    },
+    {
+      "file": "Interfaces/CommandOut.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "cf6bf498f2d671798b90f0b1a9613c46977ddcc577d58847bd5a02330e3c577d",
+      "logic_sha256": "e9d8d8449f4ace45d18c2011ba7392a5959dab962ea33ce10e4a0f879eaab1d4"
+    },
+    {
+      "file": "Interfaces/ContactBoundary.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "c1bf515ae643e86c02d13d38c3b508cb086f3e21bfa1d87e6e19d7d3f9589117",
+      "logic_sha256": "fc4b354c8c54e23187426b7cf7e81bf6de73aca2de6fce1609020e1eaf1fbc9a"
+    },
+    {
+      "file": "Interfaces/DriveBoundary.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "9e5adce2e83ab6e978a2fa45d2d5ca304017857eb3f05893ae7e230b11331740",
+      "logic_sha256": "763acc4138a38e9943828271af2ebeb10e3d3cd1ea45219890ca7d7f80b2567a"
+    },
+    {
+      "file": "Interfaces/DriveTelemetryOut.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "6a53b3d7135dc6787f49df110144b82b8cab1a725b456b2689a90dd829ba0c2e",
+      "logic_sha256": "9f48980dc9fd527e6e7c4f0a8130aef84a9281c78cd9c9037dcec45ead35c8c0"
+    },
+    {
+      "file": "Interfaces/GateBoundary.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "d6a4268dcdbd08dd8262bc2e02d4bd6957315fcae352955cf1c6c500941461c6",
+      "logic_sha256": "d1a9420475ed82d2adb126610b6441b203e7bf61ea4f2033ec1bd84564e217e9"
+    },
+    {
+      "file": "Interfaces/MeasurementBoundary.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "93cf3c4bb0e2d7d2f321e6c6e9ded5f4abfe45bf86ec7bd2baf7e308a76075ec",
+      "logic_sha256": "24efa69e19f70aa09a1b36aec2e8e749d909068816ab290b133df33136af7d8d"
+    },
+    {
+      "file": "Interfaces/MeasurementIn.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "db9ad4b1505067d226e08664f8cabf34991b9f7e0e274de042568f88d2a2ac35",
+      "logic_sha256": "4ff7f31ad49f17861aae280c43e5c0bb97a7f9e5f23af897bba0d78ef404ae8b"
+    },
+    {
+      "file": "Interfaces/MeasurementOut.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "f63bdb3bdc83d0dbe9fee0e00ee447c2bb058474d6601fe73304034b96b98473",
+      "logic_sha256": "2f120de6e898c94354420f2e9f93e71c2421f84c7fb2892e0e2c20e1f5e91f23"
+    },
+    {
+      "file": "Interfaces/TelemetryControlIn.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "f0c0000596e6c0f8d5d9a21017fe4ba6824f194c19256760afb5e27b9a58dade",
+      "logic_sha256": "bf2532fee9404b61bc52a40bb345a70c297dd3ba36b6c4a5f663f4fa3b66870f"
+    },
+    {
+      "file": "Interfaces/TelemetryControlOut.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "a158517bd1da96c0a52e3900ceff835db21054e30fc7e51b88df0ac0504bf34c",
+      "logic_sha256": "ea8203d65bd492b33faf92cc856bf972476d3ea3b4a8aedebe43cb0420fbce7b"
+    },
+    {
+      "file": "Interfaces/TelemetryDisplayIn.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "55949c38e2d91625718bdb95f94999cc449d877d2dfb18e01942ea4ee24a4c1f",
+      "logic_sha256": "6af58661b39501c751a693baf24e038794e707186697462ac710a1599d796b5a"
+    },
+    {
+      "file": "Interfaces/TelemetryDisplayOut.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "bb2cbaea999e9514bace6393ceaad7c12182b837155a945d697f40116e624954",
+      "logic_sha256": "d99912210e3cdd81b6ae79687d02c162e846662df753afef923388bf25166f79"
+    },
+    {
+      "file": "Interfaces/TelemetryIn.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "266c8ecd0676b074e13e363c6549d1537875c35a6d2dcdf5eb07cb92fdce390f",
+      "logic_sha256": "5ac7c572ce80e5a003415244d787dd97cd7f7c12553ee39529ced462900d7baf"
+    },
+    {
+      "file": "Interfaces/TelemetryOut.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "657e00420d17a07e3123ee6ea0b89aeb77b617bce1d60b82828b79031d44a2c6",
+      "logic_sha256": "fd40630b30e39870fa8a9679296679ec4093860d91f03192df572b92aa023b96"
+    },
+    {
+      "file": "Interfaces/WheelTelemetryOut.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "fdbcd387782de12795efbfc6b51ec996ab7898b9fd66ae5312b545175ff1850b",
+      "logic_sha256": "cd717266b37c019ad02d01b97d55bbede137afb1f8a58b64df76425bed416740"
+    },
+    {
+      "file": "Interfaces/package.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "cf0ac862a7c281f3d56858807ddc734776c386d5694c45bbdedfd7e2e2a4b904",
+      "logic_sha256": "fbec554420017a50907e68834e9d4ecd672508e4cbe75d73dc16657706e83ba6"
+    },
+    {
+      "file": "Mechanical/BristleContact.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "5ef240d68844063e3863e8abee5f8f74241d41401c598ae761c54d4cafd4266e",
+      "logic_sha256": "53fc178ffb473182b56ec6d72b4a885646ba0e71fe1660ac3e5591f09426e43a"
+    },
+    {
+      "file": "Mechanical/CartPoleSystem.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "459e793165fdfcf626e4bc18836e78d26684ff784e863b3a6864003ebaa01fe6",
+      "logic_sha256": "9dc641478285a3cc3945064774e15933a152af03bf58ae2719f94388745db869"
+    },
+    {
+      "file": "Mechanical/PlanarCore.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "b7865ff3bc40c9fb29db44c26b71e9408204533e8e9b2e1b56ed5d2da0bc0afb",
+      "logic_sha256": "fcd464b0d92d21fcc36e3ddb49d3a00a864fe677dd0d687bf34c497aa9d29ad9"
+    },
+    {
+      "file": "Mechanical/ReleaseGate.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "2060077c9aaaca98b1c0c127a14b6d88776b4e6fef885f14391d4f69fe14af16",
+      "logic_sha256": "876c0c2f1a801da71a6618da3159825cbead57e5c7911622ec3385e226a5ce81"
+    },
+    {
+      "file": "Mechanical/WheelAssembly.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "3bcb23caaef317843131f5db05224b01f151294eaa9f803e6c60482547fa5731",
+      "logic_sha256": "d21b30cbe3541a0c7ca352655c4befa2a9f80b1ca9312119557d0393eb062507"
+    },
+    {
+      "file": "Mechanical/package.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "e778222b29caa1b470b182d8def1b8a2e80cbf20e5c197b820b32e94f9067d9b",
+      "logic_sha256": "afd952d7c030d4f7927b5f91d1dece209065ca848a486deccf82f2447a3137ec"
+    },
+    {
+      "file": "Signals/AngleEncoder.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "fbd6b3a5523b971d1166462559ca8668a6d59becf679f963cb7456bc9dcb7e95",
+      "logic_sha256": "91651ed9e6fc702edf9ce5484c5bcccee8ab7b4eefbce4923395c580eeaaa79e"
+    },
+    {
+      "file": "Signals/LoadCell.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "ceb572aaed266a8f55946c82f8bd50871205d5d4e09d8c956969fc4735c903c8",
+      "logic_sha256": "55929d04c41bc72cc7a20884b5b9619fcf6b5fb0eb018738bcc9cef8ad1a7012"
+    },
+    {
+      "file": "Signals/MeasurementInterpose.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "1ec99094810f6034eb8386a42049da6f6e01668d3fc2b8160175eb1ec2ae3cd1",
+      "logic_sha256": "4cef3fa8bf5f2db90e61cb92df8af3c7b4f82e73cd566ecf86b1c46013a166a6"
+    },
+    {
+      "file": "Signals/PositionEncoder.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "e08dc49472f7755a63415be221b73c8a3ec97e6150aa5c458e2bdd65e628e8d4",
+      "logic_sha256": "18a84cdb6e2c452f7f23dbea448a1f414b0bb136741fc728c84b44418fdfe782"
+    },
+    {
+      "file": "Signals/SampledTransport.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "8846d9d2bb36d0a2476e0012cae7b658620d01f141f33391f1cb1cb0ceaa1d49",
+      "logic_sha256": "f3467c3c9e83c15b4b00c1a6d64e92bd3d505ff775f21b2c6f70eaed4a468584"
+    },
+    {
+      "file": "Signals/package.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "a5ac9e26076d1e813fb2d47a407f37701e51e8399cf4f10c576592f8f94ea492",
+      "logic_sha256": "32e3dd7882156aa09d8c6954a2c4e8af2ad2f906ba703da6faf7da45f831be2a"
+    },
+    {
+      "file": "Simulation/CompleteMission.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "ebb27a830f8e77743302d836c776134554543b9a12a4a1654321cedf5052950f",
+      "logic_sha256": "f1b58e329fa2b379a35efba7933e742f68a4c8af56c10b9c8fb9f4d594fdc60a"
+    },
+    {
+      "file": "Simulation/MissionCommand.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "144f1650345f37f8599e4221437a6003f2a7be77d2f0c505a687287badc45f23",
+      "logic_sha256": "e5e5047627d924acf1ced2ae0022f712116a37847c19c502958ec5cba9bc6615"
+    },
+    {
+      "file": "Simulation/package.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "e18fc922a1ac2ea2f830d3d0ca43408fe0e71b9d37a2ddffdb3c8939424e8cde",
+      "logic_sha256": "8fa49e3a1336c72c9136412c91505856ad721dbe7c340b38114b3585082865cb"
+    },
+    {
+      "file": "package.mo",
+      "non_annotation_tokens_identical": true,
+      "source_sha256": "5cff651ba191c0117b4ac502613a163dce76d94bd696b52648bf38a63423c771",
+      "logic_sha256": "58310eb618c640a149622966b05b31752fd1657c37e060a4f12a5b53e0d433e5"
+    }
+  ]
+}

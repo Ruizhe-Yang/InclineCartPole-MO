@@ -1,0 +1,132 @@
+[
+  {
+    "batch": "v0.5 original baseline batch",
+    "evidence_path": "/workspace/scratch/afb6551b309f/analysis/baseline/run_timings.json",
+    "groups": {
+      "baseline": {
+        "all_wall_seconds": [
+          1.882310774999496,
+          1.883899147000193,
+          1.8544665169993095,
+          1.9780084899994108,
+          1.9612453539994021
+        ],
+        "median": 1.883899147000193,
+        "min": 1.8544665169993095,
+        "max": 1.9780084899994108
+      }
+    }
+  },
+  {
+    "batch": "v0.6 full standard and optimized first batch",
+    "evidence_path": "/workspace/scratch/afb6551b309f/analysis/perf_candidates/full_final/run_timings.json",
+    "groups": {
+      "standard": {
+        "all_wall_seconds": [
+          2.3287608829996316,
+          2.1782749129997683,
+          2.2812429209989205
+        ],
+        "median": 2.2812429209989205,
+        "min": 2.1782749129997683,
+        "max": 2.3287608829996316
+      },
+      "optimized": {
+        "all_wall_seconds": [
+          1.7532614049996482,
+          1.7133923149995098,
+          1.8208379009993223,
+          1.7423881890026678,
+          1.6145815609997953
+        ],
+        "median": 1.7423881890026678,
+        "min": 1.6145815609997953,
+        "max": 1.8208379009993223
+      }
+    }
+  },
+  {
+    "batch": "v0.6 native CPU experiment, rejected",
+    "evidence_path": "/workspace/scratch/afb6551b309f/analysis/perf_candidates/full_final/native_cpu_timings.json",
+    "groups": {
+      "native": {
+        "all_wall_seconds": [
+          1.5840822600002866,
+          1.6039157119994343,
+          1.5390343369981565
+        ],
+        "median": 1.5840822600002866,
+        "min": 1.5390343369981565,
+        "max": 1.6039157119994343
+      },
+      "optimized": {
+        "all_wall_seconds": [
+          1.528785667000193,
+          1.5275861869995424
+        ],
+        "median": 1.5281859269998677,
+        "min": 1.5275861869995424,
+        "max": 1.528785667000193
+      }
+    }
+  },
+  {
+    "batch": "v0.6 inline budget experiment, rejected",
+    "evidence_path": "/workspace/scratch/afb6551b309f/analysis/perf_candidates/full_final/inline_timings.json",
+    "groups": {
+      "inlined": {
+        "all_wall_seconds": [
+          1.3430963259997952,
+          1.3538084709980467,
+          1.3706700100010494
+        ],
+        "median": 1.3538084709980467,
+        "min": 1.3430963259997952,
+        "max": 1.3706700100010494
+      },
+      "optimized": {
+        "all_wall_seconds": [
+          1.354334604999167,
+          1.3864151560010214
+        ],
+        "median": 1.3703748805000942,
+        "min": 1.354334604999167,
+        "max": 1.3864151560010214
+      }
+    }
+  },
+  {
+    "batch": "v0.6 final quiet-window acceptance batch",
+    "evidence_path": "/workspace/scratch/afb6551b309f/analysis/perf_candidates/full_final/acceptance_timings.json",
+    "groups": {
+      "optimized": {
+        "all_wall_seconds": [
+          1.4158055420011806,
+          1.452988398999878,
+          1.4616563900017354,
+          1.442770821002341,
+          1.4089050289985607
+        ],
+        "median": 1.442770821002341,
+        "min": 1.4089050289985607,
+        "max": 1.4616563900017354
+      }
+    }
+  },
+  {
+    "batch": "v0.5 final quiet-window baseline rerun",
+    "evidence_path": "/workspace/scratch/afb6551b309f/analysis/baseline/acceptance_timings.json",
+    "groups": {
+      "baseline": {
+        "all_wall_seconds": [
+          2.1023443670019333,
+          2.105391924000287,
+          2.0678160329989623
+        ],
+        "median": 2.1023443670019333,
+        "min": 2.0678160329989623,
+        "max": 2.105391924000287
+      }
+    }
+  }
+]

@@ -1,0 +1,575 @@
+{
+  "states_standard": 61,
+  "states_optimized": 61,
+  "same_state_set": true,
+  "sample_grid_s": 0.01,
+  "state_comparison": [
+    {
+      "variable": "cartPole.FL.contact.z",
+      "max_abs_difference": 9.960500453660737e-07,
+      "rms_difference": 2.0971555167662607e-07,
+      "standard_final": 8.663839063600158e-05,
+      "optimized_final": 8.669187645545848e-05
+    },
+    {
+      "variable": "cartPole.FL.driveUnit.bearing.phi_rel",
+      "max_abs_difference": 0.0009235727228702473,
+      "rms_difference": 0.0003308531550557882,
+      "standard_final": -0.20066528251017982,
+      "optimized_final": -0.20092175379462526
+    },
+    {
+      "variable": "cartPole.FL.driveUnit.bearing.w_rel",
+      "max_abs_difference": 0.009181707442344256,
+      "rms_difference": 0.0016177721042024405,
+      "standard_final": 0.0910940851638288,
+      "optimized_final": 0.09104844931404467
+    },
+    {
+      "variable": "cartPole.FL.driveUnit.currentPI.I.y",
+      "max_abs_difference": 0.0012028365911677698,
+      "rms_difference": 6.273247099221669e-05,
+      "standard_final": 0.11283527047206571,
+      "optimized_final": 0.11283837266925381
+    },
+    {
+      "variable": "cartPole.FL.driveUnit.driver.T",
+      "max_abs_difference": 2.520805765016121e-06,
+      "rms_difference": 5.531767646516002e-07,
+      "standard_final": 293.2458347453767,
+      "optimized_final": 293.2458351558817
+    },
+    {
+      "variable": "cartPole.FL.driveUnit.inductance.i",
+      "max_abs_difference": 0.0015694630430534984,
+      "rms_difference": 0.0003023577266874826,
+      "standard_final": 0.16750207579792917,
+      "optimized_final": 0.1674657493340793
+    },
+    {
+      "variable": "cartPole.FL.driveUnit.shell.T",
+      "max_abs_difference": 2.124046432072646e-07,
+      "rms_difference": 1.1135987260793027e-07,
+      "standard_final": 293.28647266170844,
+      "optimized_final": 293.2864728741131
+    },
+    {
+      "variable": "cartPole.FL.driveUnit.slew.y",
+      "max_abs_difference": 0.00153696236044093,
+      "rms_difference": 0.0002968264694806853,
+      "standard_final": 0.1675064137877133,
+      "optimized_final": 0.16746731766798614
+    },
+    {
+      "variable": "cartPole.FL.driveUnit.winding.T",
+      "max_abs_difference": 4.546800539628748e-06,
+      "rms_difference": 1.1633702832559262e-06,
+      "standard_final": 293.4044754807605,
+      "optimized_final": 293.40447645568923
+    },
+    {
+      "variable": "cartPole.FL.tire.T",
+      "max_abs_difference": 2.1224718693702016e-07,
+      "rms_difference": 1.1405222719695463e-07,
+      "standard_final": 293.17102074984115,
+      "optimized_final": 293.1710206795332
+    },
+    {
+      "variable": "cartPole.FR.contact.z",
+      "max_abs_difference": 9.96050045364095e-07,
+      "rms_difference": 2.0971555167695816e-07,
+      "standard_final": 8.663839063600245e-05,
+      "optimized_final": 8.669187645545895e-05
+    },
+    {
+      "variable": "cartPole.FR.driveUnit.bearing.phi_rel",
+      "max_abs_difference": 0.0009235727229821578,
+      "rms_difference": 0.0003308531551133221,
+      "standard_final": -0.2006652825102894,
+      "optimized_final": -0.20092175379461777
+    },
+    {
+      "variable": "cartPole.FR.driveUnit.bearing.w_rel",
+      "max_abs_difference": 0.009181707442332265,
+      "rms_difference": 0.0016177721042045015,
+      "standard_final": 0.09109408516382402,
+      "optimized_final": 0.09104844931404925
+    },
+    {
+      "variable": "cartPole.FR.driveUnit.currentPI.I.y",
+      "max_abs_difference": 0.0012028365911677975,
+      "rms_difference": 6.273247099113212e-05,
+      "standard_final": 0.11283527047206564,
+      "optimized_final": 0.11283837266925381
+    },
+    {
+      "variable": "cartPole.FR.driveUnit.driver.T",
+      "max_abs_difference": 2.520805765016121e-06,
+      "rms_difference": 5.531767646584174e-07,
+      "standard_final": 293.2458347453767,
+      "optimized_final": 293.2458351558817
+    },
+    {
+      "variable": "cartPole.FR.driveUnit.inductance.i",
+      "max_abs_difference": 0.0015694630430535261,
+      "rms_difference": 0.00030235772668748043,
+      "standard_final": 0.16750207579792908,
+      "optimized_final": 0.1674657493340793
+    },
+    {
+      "variable": "cartPole.FR.driveUnit.shell.T",
+      "max_abs_difference": 2.124046432072646e-07,
+      "rms_difference": 1.1135987260793027e-07,
+      "standard_final": 293.28647266170844,
+      "optimized_final": 293.2864728741131
+    },
+    {
+      "variable": "cartPole.FR.driveUnit.slew.y",
+      "max_abs_difference": 0.00153696236044093,
+      "rms_difference": 0.0002968264694806853,
+      "standard_final": 0.1675064137877133,
+      "optimized_final": 0.16746731766798614
+    },
+    {
+      "variable": "cartPole.FR.driveUnit.winding.T",
+      "max_abs_difference": 4.546800539628748e-06,
+      "rms_difference": 1.1633702832559262e-06,
+      "standard_final": 293.4044754807605,
+      "optimized_final": 293.40447645568923
+    },
+    {
+      "variable": "cartPole.FR.tire.T",
+      "max_abs_difference": 2.1224718693702016e-07,
+      "rms_difference": 1.1405222719695463e-07,
+      "standard_final": 293.17102074984115,
+      "optimized_final": 293.1710206795332
+    },
+    {
+      "variable": "cartPole.RL.contact.z",
+      "max_abs_difference": 1.1354792906456869e-06,
+      "rms_difference": 2.3223809483246736e-07,
+      "standard_final": 0.00010237074779732092,
+      "optimized_final": 0.0001023851110559843
+    },
+    {
+      "variable": "cartPole.RL.driveUnit.bearing.phi_rel",
+      "max_abs_difference": 0.0009299662732686897,
+      "rms_difference": 0.0003386835524433267,
+      "standard_final": -0.22607386837637664,
+      "optimized_final": -0.2263067527343913
+    },
+    {
+      "variable": "cartPole.RL.driveUnit.bearing.w_rel",
+      "max_abs_difference": 0.010272377104467045,
+      "rms_difference": 0.0016741909247344807,
+      "standard_final": 0.0911381288627652,
+      "optimized_final": 0.09105875162651415
+    },
+    {
+      "variable": "cartPole.RL.driveUnit.currentPI.I.y",
+      "max_abs_difference": 0.0012249929260428113,
+      "rms_difference": 6.292352323652912e-05,
+      "standard_final": 0.11276830710699048,
+      "optimized_final": 0.11277197720789665
+    },
+    {
+      "variable": "cartPole.RL.driveUnit.driver.T",
+      "max_abs_difference": 4.501250259636436e-06,
+      "rms_difference": 9.182114053128172e-07,
+      "standard_final": 293.2550493882974,
+      "optimized_final": 293.255050234662
+    },
+    {
+      "variable": "cartPole.RL.driveUnit.inductance.i",
+      "max_abs_difference": 0.0019348307303583556,
+      "rms_difference": 0.0003766091328222593,
+      "standard_final": 0.19796131452605217,
+      "optimized_final": 0.19791819384864862
+    },
+    {
+      "variable": "cartPole.RL.driveUnit.shell.T",
+      "max_abs_difference": 8.14727457054687e-07,
+      "rms_difference": 4.125703584053539e-07,
+      "standard_final": 293.3317124106915,
+      "optimized_final": 293.331713225419
+    },
+    {
+      "variable": "cartPole.RL.driveUnit.slew.y",
+      "max_abs_difference": 0.0018964442304831852,
+      "rms_difference": 0.0003706948990007452,
+      "standard_final": 0.19796830233293392,
+      "optimized_final": 0.19792206386734554
+    },
+    {
+      "variable": "cartPole.RL.driveUnit.winding.T",
+      "max_abs_difference": 1.0440549260692933e-05,
+      "rms_difference": 2.272181037236624e-06,
+      "standard_final": 293.4916276124828,
+      "optimized_final": 293.4916301134729
+    },
+    {
+      "variable": "cartPole.RL.tire.T",
+      "max_abs_difference": 5.790176373920985e-07,
+      "rms_difference": 3.468778396829492e-07,
+      "standard_final": 293.17161816029574,
+      "optimized_final": 293.17161793197135
+    },
+    {
+      "variable": "cartPole.RR.contact.z",
+      "max_abs_difference": 1.135479290645714e-06,
+      "rms_difference": 2.322380948393915e-07,
+      "standard_final": 0.0001023707477973209,
+      "optimized_final": 0.00010238511105598429
+    },
+    {
+      "variable": "cartPole.RR.driveUnit.bearing.phi_rel",
+      "max_abs_difference": 0.0009299662748691873,
+      "rms_difference": 0.00033868355330618445,
+      "standard_final": -0.2260738683779803,
+      "optimized_final": -0.22630675273439535
+    },
+    {
+      "variable": "cartPole.RR.driveUnit.bearing.w_rel",
+      "max_abs_difference": 0.01027237710446749,
+      "rms_difference": 0.0016741909246544714,
+      "standard_final": 0.0911381288627653,
+      "optimized_final": 0.09105875162651442
+    },
+    {
+      "variable": "cartPole.RR.driveUnit.currentPI.I.y",
+      "max_abs_difference": 0.0012249929260428165,
+      "rms_difference": 6.292352326103194e-05,
+      "standard_final": 0.11276830710699046,
+      "optimized_final": 0.11277197720789664
+    },
+    {
+      "variable": "cartPole.RR.driveUnit.driver.T",
+      "max_abs_difference": 4.501248895394383e-06,
+      "rms_difference": 9.182109957326702e-07,
+      "standard_final": 293.2550493882978,
+      "optimized_final": 293.255050234662
+    },
+    {
+      "variable": "cartPole.RR.driveUnit.inductance.i",
+      "max_abs_difference": 0.0019348307303583556,
+      "rms_difference": 0.00037660913282227073,
+      "standard_final": 0.19796131452605215,
+      "optimized_final": 0.1979181938486486
+    },
+    {
+      "variable": "cartPole.RR.driveUnit.shell.T",
+      "max_abs_difference": 8.14727457054687e-07,
+      "rms_difference": 4.125703584053539e-07,
+      "standard_final": 293.3317124106915,
+      "optimized_final": 293.331713225419
+    },
+    {
+      "variable": "cartPole.RR.driveUnit.slew.y",
+      "max_abs_difference": 0.0018964442304831852,
+      "rms_difference": 0.0003706948990007452,
+      "standard_final": 0.19796830233293392,
+      "optimized_final": 0.19792206386734554
+    },
+    {
+      "variable": "cartPole.RR.driveUnit.winding.T",
+      "max_abs_difference": 1.0440549147006095e-05,
+      "rms_difference": 2.2721810086028763e-06,
+      "standard_final": 293.4916276124828,
+      "optimized_final": 293.4916301134729
+    },
+    {
+      "variable": "cartPole.RR.tire.T",
+      "max_abs_difference": 5.790177510789363e-07,
+      "rms_difference": 3.4687786287163276e-07,
+      "standard_final": 293.17161816029574,
+      "optimized_final": 293.17161793197135
+    },
+    {
+      "variable": "cartPole.angleEncoder.frontEnd",
+      "max_abs_difference": 2.1461620256069125e-05,
+      "rms_difference": 7.292171238830124e-06,
+      "standard_final": 6.283371823206739,
+      "optimized_final": 6.283370858241769
+    },
+    {
+      "variable": "cartPole.core.omega",
+      "max_abs_difference": 0.000606188687612896,
+      "rms_difference": 9.643741873041429e-05,
+      "standard_final": 0.0007181579060404925,
+      "optimized_final": 0.0007419682158987243
+    },
+    {
+      "variable": "cartPole.core.s",
+      "max_abs_difference": 3.538653893009336e-05,
+      "rms_difference": 1.2567533054687938e-05,
+      "standard_final": 0.006119656806775665,
+      "optimized_final": 0.006130670846779351
+    },
+    {
+      "variable": "cartPole.core.theta",
+      "max_abs_difference": 2.1518570182621488e-05,
+      "rms_difference": 7.292826936761918e-06,
+      "standard_final": 6.28337255028488,
+      "optimized_final": 6.283371610182737
+    },
+    {
+      "variable": "cartPole.core.v",
+      "max_abs_difference": 0.0002158647262583413,
+      "rms_difference": 3.936492792487598e-05,
+      "standard_final": -0.003614144003672069,
+      "optimized_final": -0.003613680475157926
+    },
+    {
+      "variable": "cartPole.frame.T",
+      "max_abs_difference": 5.444127282316913e-08,
+      "rms_difference": 2.1232574028368135e-08,
+      "standard_final": 293.20165573322146,
+      "optimized_final": 293.20165578766273
+    },
+    {
+      "variable": "cartPole.gate.stroke",
+      "max_abs_difference": 3.0416968102228714e-09,
+      "rms_difference": 9.61388413113796e-11,
+      "standard_final": 0.006000000100600505,
+      "optimized_final": 0.006000000100600065
+    },
+    {
+      "variable": "cartPole.loadCells[1].frontEnd",
+      "max_abs_difference": 0.0037387278902061283,
+      "rms_difference": 0.0007244257680640889,
+      "standard_final": 4.926487577371094,
+      "optimized_final": 4.926441562704498
+    },
+    {
+      "variable": "cartPole.loadCells[2].frontEnd",
+      "max_abs_difference": 0.0037387278902061283,
+      "rms_difference": 0.0007244257680640886,
+      "standard_final": 4.926487577371094,
+      "optimized_final": 4.926441562704498
+    },
+    {
+      "variable": "cartPole.loadCells[3].frontEnd",
+      "max_abs_difference": 0.003818204051304619,
+      "rms_difference": 0.0007370876307977274,
+      "standard_final": 5.823467861542009,
+      "optimized_final": 5.823515372583603
+    },
+    {
+      "variable": "cartPole.loadCells[4].frontEnd",
+      "max_abs_difference": 0.003818204051304619,
+      "rms_difference": 0.0007370876307977275,
+      "standard_final": 5.823467861542009,
+      "optimized_final": 5.823515372583603
+    },
+    {
+      "variable": "cartPole.positionEncoder.frontEnd",
+      "max_abs_difference": 3.536402372439351e-05,
+      "rms_difference": 1.256703354842001e-05,
+      "standard_final": 0.0061232753766501885,
+      "optimized_final": 0.006134289257264715
+    },
+    {
+      "variable": "cartPole.power.auxiliary.V5",
+      "max_abs_difference": 5.730400146308767e-05,
+      "rms_difference": 1.8116016892867433e-06,
+      "standard_final": 5.0,
+      "optimized_final": 5.0
+    },
+    {
+      "variable": "cartPole.power.cell.capacitor[1].v",
+      "max_abs_difference": 6.605304981909324e-07,
+      "rms_difference": 1.4609428261196402e-07,
+      "standard_final": -0.002266449891550918,
+      "optimized_final": -0.0022665119876873184
+    },
+    {
+      "variable": "cartPole.power.cell.limIntegrator.y",
+      "max_abs_difference": 1.9916358562355185e-09,
+      "rms_difference": 7.963804111604955e-10,
+      "standard_final": 0.7996298486482086,
+      "optimized_final": 0.7996298473970272
+    },
+    {
+      "variable": "cartPole.power.core.T",
+      "max_abs_difference": 3.2334412480850006e-08,
+      "rms_difference": 2.536429218589985e-08,
+      "standard_final": 293.1522315892471,
+      "optimized_final": 293.15223156327716
+    },
+    {
+      "variable": "cartPole.power.link.v",
+      "max_abs_difference": 7.298197421690134e-05,
+      "rms_difference": 1.0754931924521262e-05,
+      "standard_final": 11.987717951226255,
+      "optimized_final": 11.987718947231256
+    },
+    {
+      "variable": "cartPole.power.shell.T",
+      "max_abs_difference": 4.389619334688177e-09,
+      "rms_difference": 3.15173179090612e-09,
+      "standard_final": 293.15326204709703,
+      "optimized_final": 293.1532620429727
+    },
+    {
+      "variable": "controller.pid.omegaFilter.y",
+      "max_abs_difference": 0.0005686097798606096,
+      "rms_difference": 9.309509299901246e-05,
+      "standard_final": 0.000856331978137461,
+      "optimized_final": 0.0008458745997215165
+    },
+    {
+      "variable": "controller.pid.pidIntegrator.y",
+      "max_abs_difference": 5.9161838270038736e-06,
+      "rms_difference": 2.266561359342258e-06,
+      "standard_final": -0.056291144408876455,
+      "optimized_final": -0.05628872647294516
+    },
+    {
+      "variable": "controller.pid.velocityFilter.y",
+      "max_abs_difference": 0.0001643244884064199,
+      "rms_difference": 3.964844783101757e-05,
+      "standard_final": -0.0037197094343605144,
+      "optimized_final": -0.0037197145541687025
+    }
+  ],
+  "nonfinite_standard": 0,
+  "nonfinite_optimized": 0,
+  "standard": {
+    "modes": [
+      [
+        0.5305000000000003,
+        2
+      ],
+      [
+        0.6805000000000004,
+        3
+      ],
+      [
+        2.4604999999999917,
+        4
+      ],
+      [
+        2.8404999999999836,
+        5
+      ]
+    ],
+    "cartPole.core.s": {
+      "min": -0.0006619716674972953,
+      "max": 0.6700244417902828,
+      "final": 0.006119656806775665
+    },
+    "cartPole.core.v": {
+      "min": -0.7792171853306943,
+      "max": 1.5972321592781256,
+      "final": -0.003614144003672069
+    },
+    "cartPole.core.theta": {
+      "min": 1.4586615802608465,
+      "max": 6.322914395477051,
+      "final": 6.28337255028488
+    },
+    "cartPole.core.omega": {
+      "min": -6.857897184768231,
+      "max": 10.610151503959653,
+      "final": 0.0007181579060404925
+    },
+    "cartPole.core.normal[1]": {
+      "min": 1.2903311197693972,
+      "max": 9.245785907340476,
+      "final": 4.926617066276403
+    },
+    "cartPole.core.normal[3]": {
+      "min": 1.8725701108915835,
+      "max": 11.289967338927053,
+      "final": 5.823335450346935
+    },
+    "cartPole.core.tipClearance": {
+      "min": 0.10002393848795621,
+      "max": 0.9999996276208102,
+      "final": 0.9982802625924887
+    },
+    "cartPole.power.link.v": {
+      "min": 0.0,
+      "max": 12.008207646911307,
+      "final": 11.987717951226255
+    },
+    "cartPole.power.cell.SOC": {
+      "min": 0.7996298486482086,
+      "max": 0.8,
+      "final": 0.7996298486482086
+    },
+    "wrapped_angle_deg": {
+      "final": 0.010728239676233549,
+      "last2s_max_abs": 0.03059313389788221
+    }
+  },
+  "optimized": {
+    "modes": [
+      [
+        0.5305000000000003,
+        2
+      ],
+      [
+        0.6805000000000004,
+        3
+      ],
+      [
+        2.4604999999999917,
+        4
+      ],
+      [
+        2.8404999999999836,
+        5
+      ]
+    ],
+    "cartPole.core.s": {
+      "min": -0.0006619704240649463,
+      "max": 0.67002280346609,
+      "final": 0.006130670846779351
+    },
+    "cartPole.core.v": {
+      "min": -0.779227019279065,
+      "max": 1.5972311528042638,
+      "final": -0.003613680475157926
+    },
+    "cartPole.core.theta": {
+      "min": 1.458659700789709,
+      "max": 6.3229330690496965,
+      "final": 6.283371610182737
+    },
+    "cartPole.core.omega": {
+      "min": -6.857901820301246,
+      "max": 10.610164277960935,
+      "final": 0.0007419682158987243
+    },
+    "cartPole.core.normal[1]": {
+      "min": 1.2903914133256753,
+      "max": 9.24580781722118,
+      "final": 4.926533084308564
+    },
+    "cartPole.core.normal[3]": {
+      "min": 1.87257530210929,
+      "max": 11.29000682683255,
+      "final": 5.823421754776098
+    },
+    "cartPole.core.tipClearance": {
+      "min": 0.10002394646831242,
+      "max": 0.999999625190862,
+      "final": 0.9982802995420861
+    },
+    "cartPole.power.link.v": {
+      "min": 0.0,
+      "max": 12.008207767133726,
+      "final": 11.987718947231256
+    },
+    "cartPole.power.cell.SOC": {
+      "min": 0.7996298473970272,
+      "max": 0.8,
+      "final": 0.7996298473970272
+    },
+    "wrapped_angle_deg": {
+      "final": 0.010674375791139957,
+      "last2s_max_abs": 0.030595259099025704
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "label": "standard",
+    "wall_s": 6.403455260002374,
+    "returncode": 0,
+    "exists": true
+  },
+  {
+    "label": "optimized",
+    "wall_s": 5.674241529999563,
+    "returncode": 0,
+    "exists": true
+  }
+]

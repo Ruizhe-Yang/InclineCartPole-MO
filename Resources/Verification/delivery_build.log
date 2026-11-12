@@ -1,0 +1,65 @@
+"OpenModelica 1.25.5"
+true
+true
+true
+true
+true
+true
+true
+"Notification: You can install the requested package using one of the commands:
+  installPackage(Modelica, \"4.1.0+maint.om\", exactMatch=true)
+  installPackage(Modelica, \"4.0.0\", exactMatch=false).
+Notification: Skipped loading package Modelica (4.0.0) using MODELICAPATH /workspace/scratch/0b28cf1fdf33/analysis/toolchain/ModelicaStandardLibrary-4.0.0:/home/agent/.openmodelica/libraries/ (uses-annotation may be wrong).
+"
+"Check of InclineCartPole.Simulation.CompleteMission completed successfully.
+Class InclineCartPole.Simulation.CompleteMission has 2582 equation(s) and 2582 variable(s).
+1860 of these are trivial equation(s)."
+""
+true
+{"/workspace/scratch/afb6551b309f/analysis/delivery_build/v06", "v06_init.xml"}
+"Notification: Model statistics after passing the front-end and creating the data structures used by the back-end:
+ * Number of equations: 2582
+ * Number of variables: 2582
+Notification: Model statistics after passing the back-end for initialization:
+ * Number of independent subsystems: 188
+ * Number of states: 0 ()
+ * Number of discrete variables: 260 ('-d=discreteinfo' for list of discrete vars)
+ * Number of discrete states: 0 ('-d=discreteinfo' for list of discrete states)
+ * Number of clocked states: 0 ('-d=discreteinfo' for list of clocked states)
+ * Top-level inputs: 0
+Notification: Strong component statistics for initialization (958):
+ * Single equations (assignments): 956
+ * Array equations: 0
+ * Algorithm blocks: 0
+ * Record equations: 0
+ * When equations: 0
+ * If-equations: 0
+ * Equation systems (not torn): 0
+ * Torn equation systems: 2
+ * Mixed (continuous/discrete) equation systems: 0
+Notification: Torn system details for strict tearing set:
+ * Linear torn systems (#iteration vars, #inner vars, density): 2 systems
+   {(1,4,100.0%), (1,18,100.0%)}
+ * Non-linear torn systems (#iteration vars, #inner vars): 0 systems
+Notification: Model statistics after passing the back-end for simulation:
+ * Number of independent subsystems: 12
+ * Number of states: 61 (cartPole.loadCells[4].frontEnd,cartPole.loadCells[3].frontEnd,cartPole.loadCells[2].frontEnd,cartPole.loadCells[1].frontEnd,cartPole.angleEncoder.frontEnd,cartPole.positionEncoder.frontEnd,cartPole.frame.T,cartPole.RR.tire.T,cartPole.RR.contact.z,cartPole.RR.driveUnit.driver.T,cartPole.RR.driveUnit.shell.T,cartPole.RR.driveUnit.winding.T,cartPole.RR.driveUnit.currentPI.I.y,cartPole.RR.driveUnit.slew.y,cartPole.RR.driveUnit.bearing.w_rel,cartPole.RR.driveUnit.bearing.phi_rel,cartPole.RR.driveUnit.inductance.i,cartPole.RL.tire.T,cartPole.RL.contact.z,cartPole.RL.driveUnit.driver.T,cartPole.RL.driveUnit.shell.T,cartPole.RL.driveUnit.winding.T,cartPole.RL.driveUnit.currentPI.I.y,cartPole.RL.driveUnit.slew.y,cartPole.RL.driveUnit.bearing.w_rel,cartPole.RL.driveUnit.bearing.phi_rel,cartPole.RL.driveUnit.inductance.i,cartPole.FR.tire.T,cartPole.FR.contact.z,cartPole.FR.driveUnit.driver.T,cartPole.FR.driveUnit.shell.T,cartPole.FR.driveUnit.winding.T,cartPole.FR.driveUnit.currentPI.I.y,cartPole.FR.driveUnit.slew.y,cartPole.FR.driveUnit.bearing.w_rel,cartPole.FR.driveUnit.bearing.phi_rel,cartPole.FR.driveUnit.inductance.i,cartPole.FL.tire.T,cartPole.FL.contact.z,cartPole.FL.driveUnit.driver.T,cartPole.FL.driveUnit.shell.T,cartPole.FL.driveUnit.winding.T,cartPole.FL.driveUnit.currentPI.I.y,cartPole.FL.driveUnit.slew.y,cartPole.FL.driveUnit.bearing.w_rel,cartPole.FL.driveUnit.bearing.phi_rel,cartPole.FL.driveUnit.inductance.i,cartPole.core.omega,cartPole.core.v,cartPole.core.theta,cartPole.core.s,cartPole.gate.stroke,cartPole.power.shell.T,cartPole.power.core.T,cartPole.power.auxiliary.V5,cartPole.power.link.v,cartPole.power.cell.capacitor[1].v,cartPole.power.cell.limIntegrator.y,controller.pid.pidIntegrator.y,controller.pid.omegaFilter.y,controller.pid.velocityFilter.y)
+ * Number of discrete variables: 163 ('-d=discreteinfo' for list of discrete vars)
+ * Number of discrete states: 36 ('-d=discreteinfo' for list of discrete states)
+ * Number of clocked states: 0 ('-d=discreteinfo' for list of clocked states)
+ * Top-level inputs: 0
+Notification: Strong component statistics for simulation (710):
+ * Single equations (assignments): 649
+ * Array equations: 0
+ * Algorithm blocks: 0
+ * Record equations: 0
+ * When equations: 59
+ * If-equations: 0
+ * Equation systems (not torn): 0
+ * Torn equation systems: 2
+ * Mixed (continuous/discrete) equation systems: 0
+Notification: Torn system details for strict tearing set:
+ * Linear torn systems (#iteration vars, #inner vars, density): 2 systems
+   {(1,4,100.0%), (1,18,100.0%)}
+ * Non-linear torn systems (#iteration vars, #inner vars): 0 systems
+"

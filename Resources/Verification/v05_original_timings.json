@@ -1,0 +1,32 @@
+[
+  {
+    "run": 0,
+    "wall_s": 1.882310774999496,
+    "returncode": 0,
+    "result_bytes": 31505542
+  },
+  {
+    "run": 1,
+    "wall_s": 1.883899147000193,
+    "returncode": 0,
+    "result_bytes": 31505542
+  },
+  {
+    "run": 2,
+    "wall_s": 1.8544665169993095,
+    "returncode": 0,
+    "result_bytes": 31505542
+  },
+  {
+    "run": 3,
+    "wall_s": 1.9780084899994108,
+    "returncode": 0,
+    "result_bytes": 31505542
+  },
+  {
+    "run": 4,
+    "wall_s": 1.9612453539994021,
+    "returncode": 0,
+    "result_bytes": 31505542
+  }
+]

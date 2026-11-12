@@ -1,0 +1,7 @@
+{
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "gcc_version": "gcc (Debian 14.2.0-19) 14.2.0",
+  "compiler": "OpenModelica 1.25.5",
+  "modelica_standard_library": "4.0.0"
+}

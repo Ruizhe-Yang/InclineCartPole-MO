@@ -1,0 +1,506 @@
+{
+  "files": [
+    {
+      "path": "Control/BalanceLoop.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "65447823ab9c9329383ee980838f5fe56da0f9a2fda0c13869edbaa5b06ff0b3",
+      "work_sha256": "65447823ab9c9329383ee980838f5fe56da0f9a2fda0c13869edbaa5b06ff0b3"
+    },
+    {
+      "path": "Control/CartController.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "b04ebefadd423196dea56ba22cb8ed153bb55d391f91977060f562bd1f43f8e3",
+      "work_sha256": "b04ebefadd423196dea56ba22cb8ed153bb55d391f91977060f562bd1f43f8e3"
+    },
+    {
+      "path": "Control/CurrentAllocator.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "4650bb9725293fb7513c516aa3a162726a07dd0f0085c1453c9cdbb28cb3e2ae",
+      "work_sha256": "4650bb9725293fb7513c516aa3a162726a07dd0f0085c1453c9cdbb28cb3e2ae"
+    },
+    {
+      "path": "Control/EnergySwingUp.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "dce7ba0a67c1fa6a150dc80f0d8b524eb7a4f4d0c8ab6399d5f744ac54030887",
+      "work_sha256": "dce7ba0a67c1fa6a150dc80f0d8b524eb7a4f4d0c8ab6399d5f744ac54030887"
+    },
+    {
+      "path": "Control/LogicUnits/AccelerationSelector.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "c724c40cbb8cb0825c2ab4dad51a4cf3fff5517c9ca08070a2b8a24ea5da0ca4",
+      "work_sha256": "c724c40cbb8cb0825c2ab4dad51a4cf3fff5517c9ca08070a2b8a24ea5da0ca4"
+    },
+    {
+      "path": "Control/LogicUnits/BalanceRegion.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "c02e241ac99e5352e159c6340393e92a021653efb5b7c111e7fffb34b2f06267",
+      "work_sha256": "c02e241ac99e5352e159c6340393e92a021653efb5b7c111e7fffb34b2f06267"
+    },
+    {
+      "path": "Control/LogicUnits/CaptureRegion.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "d76873125f525a6ea7c08bc7433b98abd266e93505fc81f3f10e8d41aba154ab",
+      "work_sha256": "d76873125f525a6ea7c08bc7433b98abd266e93505fc81f3f10e8d41aba154ab"
+    },
+    {
+      "path": "Control/LogicUnits/DwellQualifier.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "eca6b05d34f40521242a96e6270157b91a754473991cd25442e5b59c8cf016b2",
+      "work_sha256": "eca6b05d34f40521242a96e6270157b91a754473991cd25442e5b59c8cf016b2"
+    },
+    {
+      "path": "Control/LogicUnits/MeasurementPermit.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "5a76cdc9d34347e6da3c2ade25bf6d96c487bd3c365989474254d40279a52cc0",
+      "work_sha256": "5a76cdc9d34347e6da3c2ade25bf6d96c487bd3c365989474254d40279a52cc0"
+    },
+    {
+      "path": "Control/LogicUnits/ModeSequence.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "790262904666b2c305f940a5a78768b1c653bc20254cb16b5feba1f88f15215f",
+      "work_sha256": "790262904666b2c305f940a5a78768b1c653bc20254cb16b5feba1f88f15215f"
+    },
+    {
+      "path": "Control/LogicUnits/StepResidence.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "ad287f06ce0b3ea2b0a7f1a2d5d459a66a4a35c636c50268df2d56cfe11a7341",
+      "work_sha256": "ad287f06ce0b3ea2b0a7f1a2d5d459a66a4a35c636c50268df2d56cfe11a7341"
+    },
+    {
+      "path": "Control/LogicUnits/WrappedAngle.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "6c8bb05af922dff13ffa5452c5a267a6661c4a999aba9fe237c53ae38424b52f",
+      "work_sha256": "6c8bb05af922dff13ffa5452c5a267a6661c4a999aba9fe237c53ae38424b52f"
+    },
+    {
+      "path": "Control/LogicUnits/package.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "183633829c5310291e11cd878ec31851c91485225cefe0f60d1c0476cd0e323c",
+      "work_sha256": "183633829c5310291e11cd878ec31851c91485225cefe0f60d1c0476cd0e323c"
+    },
+    {
+      "path": "Control/ModeSupervisor.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "6f2da432b76c51a88089c1b14b2fe011f8d5c6503f72ff97b3d15e7d2334b586",
+      "work_sha256": "6f2da432b76c51a88089c1b14b2fe011f8d5c6503f72ff97b3d15e7d2334b586"
+    },
+    {
+      "path": "Control/package.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "3fb544713eb16c9f0a7ee1b0b514cbbc98acb9f583c02271924824b58a6c58a3",
+      "work_sha256": "3fb544713eb16c9f0a7ee1b0b514cbbc98acb9f583c02271924824b58a6c58a3"
+    },
+    {
+      "path": "Displays/ContactPanel.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "879e31199c55beb18f56a5a3ab989cba9b4ad33293cfd63df1dae01d8403fdc9",
+      "work_sha256": "879e31199c55beb18f56a5a3ab989cba9b4ad33293cfd63df1dae01d8403fdc9"
+    },
+    {
+      "path": "Displays/DrivePanel.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "60157c7198d2ca2f108ae1a13021ef26cc991cc847689605e65e65c9bb265663",
+      "work_sha256": "60157c7198d2ca2f108ae1a13021ef26cc991cc847689605e65e65c9bb265663"
+    },
+    {
+      "path": "Displays/EngineeringValues.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "502c38dcaf755b82e386eafcfc9645bb71ec9607039c0396cf5e138fc5486669",
+      "work_sha256": "502c38dcaf755b82e386eafcfc9645bb71ec9607039c0396cf5e138fc5486669"
+    },
+    {
+      "path": "Displays/MotionPanel.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "e2c90ec7df47beac0d19e1d2e152798d2af4de98ee96944b9fa88ed5a7032a6f",
+      "work_sha256": "e2c90ec7df47beac0d19e1d2e152798d2af4de98ee96944b9fa88ed5a7032a6f"
+    },
+    {
+      "path": "Displays/PowerPanel.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "550a3e27403a1aad8f4bf5497e383667f9befa536001cfe900071f28035729b7",
+      "work_sha256": "550a3e27403a1aad8f4bf5497e383667f9befa536001cfe900071f28035729b7"
+    },
+    {
+      "path": "Displays/RunDisplay.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "0215ed0fc7eb8092e849aa7e1ee5a8bb450eaf41d9a6020a3908b37349db1fbe",
+      "work_sha256": "0215ed0fc7eb8092e849aa7e1ee5a8bb450eaf41d9a6020a3908b37349db1fbe"
+    },
+    {
+      "path": "Displays/SensingPanel.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "0c87aa45a41c9a7179509cf9de51a936953777cc3389516aaff0e8343d07b765",
+      "work_sha256": "0c87aa45a41c9a7179509cf9de51a936953777cc3389516aaff0e8343d07b765"
+    },
+    {
+      "path": "Displays/StatusPanel.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "9e2182b555149cf7cd35c8ca6f4720e6f8f28f9011282247903f031ee4c2b9e2",
+      "work_sha256": "9e2182b555149cf7cd35c8ca6f4720e6f8f28f9011282247903f031ee4c2b9e2"
+    },
+    {
+      "path": "Displays/package.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "cb89f622ca12a3df779dff1bdf1d0f503891df64b68ff6022c551b05cb39eb66",
+      "work_sha256": "cb89f622ca12a3df779dff1bdf1d0f503891df64b68ff6022c551b05cb39eb66"
+    },
+    {
+      "path": "Electrical/AuxiliaryLoad.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "25623c8685d62a82288f72faabab82dc80ea3ab691627e272d15a6463c6d411b",
+      "work_sha256": "25623c8685d62a82288f72faabab82dc80ea3ab691627e272d15a6463c6d411b"
+    },
+    {
+      "path": "Electrical/AveragePowerBridge.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "143e37ac4b8a6de32a08b5293dff76d28b5c3f76b9b8840c435a8497d8ddae4a",
+      "work_sha256": "143e37ac4b8a6de32a08b5293dff76d28b5c3f76b9b8840c435a8497d8ddae4a"
+    },
+    {
+      "path": "Electrical/BatterySupply.mo",
+      "raw_equal": false,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "7aab26ae50ae7cc1249dc9ddd0cf2f3603d631adbb42db66b9f6096ee15e469d",
+      "work_sha256": "23a6fedd6aff8590531c90e0124b419a643d9e91f76188431d5cc186767191fc"
+    },
+    {
+      "path": "Electrical/ObservedCellStack.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "333146e6c52955cbe4b5ae275b0d4df996c63e0b125baf501bd6f65512687c0a",
+      "work_sha256": "333146e6c52955cbe4b5ae275b0d4df996c63e0b125baf501bd6f65512687c0a"
+    },
+    {
+      "path": "Electrical/SupplySupervisor.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "4a3f5c63a881bf005e01788e11e74086d2615bcfc4d2330ca92c43b9978741c9",
+      "work_sha256": "4a3f5c63a881bf005e01788e11e74086d2615bcfc4d2330ca92c43b9978741c9"
+    },
+    {
+      "path": "Electrical/WheelDrive.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "5e8cc5df5801d8431efe7ce3724aedf7aedbc4ce03327b45b2360139d6fd9086",
+      "work_sha256": "5e8cc5df5801d8431efe7ce3724aedf7aedbc4ce03327b45b2360139d6fd9086"
+    },
+    {
+      "path": "Electrical/package.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "dd1ea186020a19a130d725993029d7a87be897d5c20316d4a65d610ab9ba98b9",
+      "work_sha256": "dd1ea186020a19a130d725993029d7a87be897d5c20316d4a65d610ab9ba98b9"
+    },
+    {
+      "path": "Environment/Environment.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "e02f208b58dd1279f380e4266673f322e0b940a0b4295cdad4489bdf332f23ab",
+      "work_sha256": "e02f208b58dd1279f380e4266673f322e0b940a0b4295cdad4489bdf332f23ab"
+    },
+    {
+      "path": "Environment/package.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "68e186cb21c9dd263cf89b34c25ad4054c11c49dd1af96833a484886a4cfa85d",
+      "work_sha256": "68e186cb21c9dd263cf89b34c25ad4054c11c49dd1af96833a484886a4cfa85d"
+    },
+    {
+      "path": "Interfaces/BatteryBoundary.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "e62e263847a4e9e110b617688117d90c414b1a3fa39e5a32d3db9e3a44f50932",
+      "work_sha256": "e62e263847a4e9e110b617688117d90c414b1a3fa39e5a32d3db9e3a44f50932"
+    },
+    {
+      "path": "Interfaces/BatteryTelemetryOut.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "3dad6fba707e8ae94f4f2ab79dbe662dfbd36dfb75f0a5b77ed8e90422c55afc",
+      "work_sha256": "3dad6fba707e8ae94f4f2ab79dbe662dfbd36dfb75f0a5b77ed8e90422c55afc"
+    },
+    {
+      "path": "Interfaces/CommandIn.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "8f1a7ac7006442f706408be25d3fe19b878bfb71a32d15ef6f841f5e0aac5185",
+      "work_sha256": "8f1a7ac7006442f706408be25d3fe19b878bfb71a32d15ef6f841f5e0aac5185"
+    },
+    {
+      "path": "Interfaces/CommandOut.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "7d3e8db79f52d32f7091fe3e3f8966366d962b8f61dd5cf7956aaa3197873948",
+      "work_sha256": "7d3e8db79f52d32f7091fe3e3f8966366d962b8f61dd5cf7956aaa3197873948"
+    },
+    {
+      "path": "Interfaces/ContactBoundary.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "418aea6c4d3bf0c1229b782b83a3a143e1c26e6a851133f7ba5ceb43830ee188",
+      "work_sha256": "418aea6c4d3bf0c1229b782b83a3a143e1c26e6a851133f7ba5ceb43830ee188"
+    },
+    {
+      "path": "Interfaces/DriveBoundary.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "36a215a9d81e7de53212e1ff79f0e1fc6fdf070dbd915686034cc91daeadce92",
+      "work_sha256": "36a215a9d81e7de53212e1ff79f0e1fc6fdf070dbd915686034cc91daeadce92"
+    },
+    {
+      "path": "Interfaces/DriveTelemetryOut.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "542054388607d019a6214730ca65343e6269918c3760dabc3fce9ea6779c2f8a",
+      "work_sha256": "542054388607d019a6214730ca65343e6269918c3760dabc3fce9ea6779c2f8a"
+    },
+    {
+      "path": "Interfaces/GateBoundary.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "4a721644150ee99bfc2c737044a7671ee7014eda8eacfb570f7129a82b67a2a5",
+      "work_sha256": "4a721644150ee99bfc2c737044a7671ee7014eda8eacfb570f7129a82b67a2a5"
+    },
+    {
+      "path": "Interfaces/MeasurementBoundary.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "251dc68eceed6fec764913e3f312a02cbe576203b3d9fd01cecc39f0b6ac7416",
+      "work_sha256": "251dc68eceed6fec764913e3f312a02cbe576203b3d9fd01cecc39f0b6ac7416"
+    },
+    {
+      "path": "Interfaces/MeasurementIn.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "4d08a84863ca2204fa07bf30adb066978174e6b1caa8f036f4493756381178e8",
+      "work_sha256": "4d08a84863ca2204fa07bf30adb066978174e6b1caa8f036f4493756381178e8"
+    },
+    {
+      "path": "Interfaces/MeasurementOut.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "adffa886c8c739c6f6eb7eb44254239c199ef3dc6f66bebccd2ef472efe8b99d",
+      "work_sha256": "adffa886c8c739c6f6eb7eb44254239c199ef3dc6f66bebccd2ef472efe8b99d"
+    },
+    {
+      "path": "Interfaces/TelemetryControlIn.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "12bd3279143cef2638de7a92a84191ac23be8e9ba1678473d78fe3bc27da2cf2",
+      "work_sha256": "12bd3279143cef2638de7a92a84191ac23be8e9ba1678473d78fe3bc27da2cf2"
+    },
+    {
+      "path": "Interfaces/TelemetryControlOut.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "71e331854d06794c9e3e77b71a31d08ffe3077f8a93c5e6322a867aa62b36b00",
+      "work_sha256": "71e331854d06794c9e3e77b71a31d08ffe3077f8a93c5e6322a867aa62b36b00"
+    },
+    {
+      "path": "Interfaces/TelemetryDisplayIn.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "8c56e5c2bc5cf7ffd8ac06bb27081f4970c75cf18ac57f7422ce4b85729319b8",
+      "work_sha256": "8c56e5c2bc5cf7ffd8ac06bb27081f4970c75cf18ac57f7422ce4b85729319b8"
+    },
+    {
+      "path": "Interfaces/TelemetryDisplayOut.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "adcc199f875a30f50a503e18df55b9f241faeef40499b5e2c336d1f2ea6c0580",
+      "work_sha256": "adcc199f875a30f50a503e18df55b9f241faeef40499b5e2c336d1f2ea6c0580"
+    },
+    {
+      "path": "Interfaces/TelemetryIn.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "64ad19254579b6f2106af01f12f40d5dfcced85f2d7ff7977fb6a2f848406651",
+      "work_sha256": "64ad19254579b6f2106af01f12f40d5dfcced85f2d7ff7977fb6a2f848406651"
+    },
+    {
+      "path": "Interfaces/TelemetryOut.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "fde774fdb1c4574311ff4b3f5071c1c8e59a15c6d752494faca3b3f081beee11",
+      "work_sha256": "fde774fdb1c4574311ff4b3f5071c1c8e59a15c6d752494faca3b3f081beee11"
+    },
+    {
+      "path": "Interfaces/WheelTelemetryOut.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "280ec6f29c94f68dcd7e8c209841188b0ade41d2f67608b9bb899189a7831702",
+      "work_sha256": "280ec6f29c94f68dcd7e8c209841188b0ade41d2f67608b9bb899189a7831702"
+    },
+    {
+      "path": "Interfaces/package.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "5f3eac1e7f5ccddba89294b82cd316a072340c973342f6957475ce382d5b8d72",
+      "work_sha256": "5f3eac1e7f5ccddba89294b82cd316a072340c973342f6957475ce382d5b8d72"
+    },
+    {
+      "path": "Mechanical/BristleContact.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "96cffb8a2c375513ece3089c8d609f0f99b4bed104f0c1c8346e87cb06d5a2f4",
+      "work_sha256": "96cffb8a2c375513ece3089c8d609f0f99b4bed104f0c1c8346e87cb06d5a2f4"
+    },
+    {
+      "path": "Mechanical/CartPoleSystem.mo",
+      "raw_equal": false,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "9bf6b71e980d95aa9348430de115c1fae004af117553baac80a5c49cbdae9aa3",
+      "work_sha256": "3ced985631e736cab7a70011013bf3e7fbf52d1011b337173291f971ad727623"
+    },
+    {
+      "path": "Mechanical/PlanarCore.mo",
+      "raw_equal": false,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "d94aef660fc7081a1b2d42628016b3d27621cd59b663cacef0a81900b256db75",
+      "work_sha256": "ad19840907ce662d197a36dce8238ba32ebf942299817e6c72784cb0dea7bff4"
+    },
+    {
+      "path": "Mechanical/ReleaseGate.mo",
+      "raw_equal": false,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "a110d8f790d76c6f607340c9fd62e58ade05e601931bba347e80233f33219761",
+      "work_sha256": "7676b4ea3f01a608f49eb6e4f546ba3069392197181776474acb4c44ae8b4073"
+    },
+    {
+      "path": "Mechanical/WheelAssembly.mo",
+      "raw_equal": false,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "0df344fa8fa5ca7e5b8d19cd8a4381b37162c385c89e09ffa79b27f1f1efa17b",
+      "work_sha256": "427cc24e1bc9fb90de2d9bde1024467ed4574a44360bde746d8cbe26f04bdade"
+    },
+    {
+      "path": "Mechanical/package.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "019e9c21cc23c4dda5bf6bb8ac10947e0a21bcabfdddda58f9e29b1b07bed88a",
+      "work_sha256": "019e9c21cc23c4dda5bf6bb8ac10947e0a21bcabfdddda58f9e29b1b07bed88a"
+    },
+    {
+      "path": "Signals/AngleEncoder.mo",
+      "raw_equal": false,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "258f608d58fcb7a41989a84e07f9bbcdb924506cc5c4a1df3130c4434544c1f2",
+      "work_sha256": "53ead64bf17000dc8ac81800a1dda23d6f670fe706f44cc1f81458c1cec4a69d"
+    },
+    {
+      "path": "Signals/LoadCell.mo",
+      "raw_equal": false,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "13586e0b2d14d349fbbc4d76e50bd007afa14212f74454be28e38f2091f2340a",
+      "work_sha256": "8dcebf8f0b9e744dcdc392ad0cfe38640f5dd0a0b3c1fa2c297c61453ae754bc"
+    },
+    {
+      "path": "Signals/MeasurementInterpose.mo",
+      "raw_equal": false,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "9c6ea672b4e2f5ba8ba98ab8a8d69357b958b3388ddc4389445fd9431e4bf09b",
+      "work_sha256": "6b65d42c34d191a66fb8bda86b42c05ed65098bab6f4a30aea7a4826550e7806"
+    },
+    {
+      "path": "Signals/PositionEncoder.mo",
+      "raw_equal": false,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "b07c46687648de1a9f276925c9e0746aa4f2d1a5e845eacaacce2afe86698ff4",
+      "work_sha256": "d89b30516b42662af3ee0118e71975bfc6e9581e706134645274ff3fc42eef71"
+    },
+    {
+      "path": "Signals/SampledTransport.mo",
+      "raw_equal": false,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "7df7f459f644a48cab69d923029ec7d02ddd406dbf848d6e1c219f3643ce4c5d",
+      "work_sha256": "87d066d617f1013addd96a51afc35a5a816fdc1b3dc4de8dc0440261086b64fe"
+    },
+    {
+      "path": "Signals/package.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "027fcef735aa55f8e832a4e9cfda94f0a8ed6ee93346237667a1f386b6c77a0f",
+      "work_sha256": "027fcef735aa55f8e832a4e9cfda94f0a8ed6ee93346237667a1f386b6c77a0f"
+    },
+    {
+      "path": "Simulation/CompleteMission.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "4a87d5c2aca44504030d5d7eb0211d1d227bca54e657f5f1a147126c7f2379e0",
+      "work_sha256": "4a87d5c2aca44504030d5d7eb0211d1d227bca54e657f5f1a147126c7f2379e0"
+    },
+    {
+      "path": "Simulation/MissionCommand.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "b913749e58acbc3359bcffa7bc17dc3e40d8334a40c9baa0662ae8ba34ade9fb",
+      "work_sha256": "b913749e58acbc3359bcffa7bc17dc3e40d8334a40c9baa0662ae8ba34ade9fb"
+    },
+    {
+      "path": "Simulation/package.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "17fdc49a9aaa228933474700431d4d1b0ed2e391accabacb898806f9906aa629",
+      "work_sha256": "17fdc49a9aaa228933474700431d4d1b0ed2e391accabacb898806f9906aa629"
+    },
+    {
+      "path": "package.mo",
+      "raw_equal": true,
+      "without_annotation_comments_whitespace_equal": true,
+      "source_sha256": "8db03a738e119aa140d89662e0d8dcb8950f537500a7f27ded5489cc5e2dc15e",
+      "work_sha256": "8db03a738e119aa140d89662e0d8dcb8950f537500a7f27ded5489cc5e2dc15e"
+    }
+  ],
+  "annotation_only_changes": [
+    "Electrical/BatterySupply.mo",
+    "Mechanical/CartPoleSystem.mo",
+    "Mechanical/PlanarCore.mo",
+    "Mechanical/ReleaseGate.mo",
+    "Mechanical/WheelAssembly.mo",
+    "Signals/AngleEncoder.mo",
+    "Signals/LoadCell.mo",
+    "Signals/MeasurementInterpose.mo",
+    "Signals/PositionEncoder.mo",
+    "Signals/SampledTransport.mo"
+  ],
+  "non_annotation_changes": [],
+  "same_state_set": true,
+  "states": {
+    "standard": 61,
+    "optimized": 61
+  },
+  "acceptance_mat_sha256": {
+    "acceptance_run2.mat": "fc9e590ae45b4775e9cdeafd6f3b20ad120043189bb8600cfc280a736da57e4f",
+    "acceptance_run0.mat": "fc9e590ae45b4775e9cdeafd6f3b20ad120043189bb8600cfc280a736da57e4f",
+    "acceptance_run3.mat": "fc9e590ae45b4775e9cdeafd6f3b20ad120043189bb8600cfc280a736da57e4f",
+    "acceptance_run1.mat": "fc9e590ae45b4775e9cdeafd6f3b20ad120043189bb8600cfc280a736da57e4f",
+    "acceptance_run4.mat": "fc9e590ae45b4775e9cdeafd6f3b20ad120043189bb8600cfc280a736da57e4f"
+  },
+  "all_five_outputs_byte_identical": true
+}

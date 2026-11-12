@@ -1,0 +1,179 @@
+{
+  "jamming_case": {
+    "finished_time_s": 10.0,
+    "nonfinite_dynamic_values": 0,
+    "warning_or_assert_or_error_lines": [],
+    "success_log": true,
+    "maximum_thermal_node_C": 20.149828590433913,
+    "power_residual_max_abs_W": {
+      "cartPole.core.powerResidual": 3.2864878353466853e-18,
+      "cartPole.gate.powerResidual": 2.2201220591479883e-16,
+      "cartPole.power.auxiliary.powerResidual": 2.220446049250313e-16,
+      "cartPole.FL.driveUnit.bridge.portResidual": 1.0164395367051604e-20,
+      "cartPole.FR.driveUnit.bridge.portResidual": 1.0164395367051604e-20,
+      "cartPole.RL.driveUnit.bridge.portResidual": 1.0164395367051604e-20,
+      "cartPole.RR.driveUnit.bridge.portResidual": 1.0164395367051604e-20
+    },
+    "expectation": "实际机械卡滞：释放请求和线圈通电仍会发生；stroke 保持为零，gateReleased 始终为假，运行许可和驱动始终为假，模式持续为1等待。挡板继续支撑小车；不把卡滞误判为已释放或启动。",
+    "jammed_override_confirmed": true,
+    "release_request_occurs": true,
+    "coil_energized_occurs": true,
+    "coil_energized_final": true,
+    "coil_power_max_W": 2.996798076171972,
+    "coil_power_final_W": 2.983657749340136,
+    "stroke_max_m": 1.4153993738036148e-26,
+    "gate_released_ever": false,
+    "permit_ever": false,
+    "drive_enabled_ever": false,
+    "mode_range": [
+      1.0,
+      1.0
+    ],
+    "max_abs_current_command_A": 0.0,
+    "max_abs_cart_position_m": 0.0004353475556930988,
+    "final_cart_position_m": -0.00031349470031348097,
+    "minimum_wheel_normal_N": 5.2461666632635024,
+    "minimum_tip_clearance_m": 0.10165777765746825,
+    "boundary": "卡滞时线圈持续通电；本模型没有释放超时故障锁存或独立线圈热模型，本检查结论限于启动联锁阻止错误启动及10秒模型有效域。",
+    "status": "PASS"
+  },
+  "tolerance_reference_case": {
+    "finished_time_s": 10.0,
+    "nonfinite_dynamic_values": 0,
+    "warning_or_assert_or_error_lines": [],
+    "success_log": true,
+    "maximum_thermal_node_C": 20.49838796556162,
+    "power_residual_max_abs_W": {
+      "cartPole.core.powerResidual": 6.802718111043049e-15,
+      "cartPole.gate.powerResidual": 2.1307876117834454e-16,
+      "cartPole.power.auxiliary.powerResidual": 1.1102230246251565e-16,
+      "cartPole.FL.driveUnit.bridge.portResidual": 2.338407245616736e-15,
+      "cartPole.FR.driveUnit.bridge.portResidual": 1.996666720849305e-15,
+      "cartPole.RL.driveUnit.bridge.portResidual": 3.0166841247236675e-15,
+      "cartPole.RR.driveUnit.bridge.portResidual": 4.128641872824801e-15
+    },
+    "nominal_tolerance": 1e-06,
+    "reference_tolerance": 1e-07,
+    "override_command": "-override=tolerance=1e-7",
+    "tail_interval_s": [
+      8,
+      10
+    ],
+    "nominal_tail": {
+      "max_abs_pole_angle_deg": 0.030649252704746756,
+      "final_pole_angle_deg": 0.010846940236360923,
+      "max_abs_cart_position_m": 0.009099986185043802,
+      "final_cart_position_m": 0.006114501578032944,
+      "max_abs_cart_velocity_mps": 0.0039058403216315706,
+      "final_cart_velocity_mps": -0.0035972888536431155
+    },
+    "reference_tail": {
+      "max_abs_pole_angle_deg": 0.030630201584226902,
+      "final_pole_angle_deg": 0.010327593809845,
+      "max_abs_cart_position_m": 0.009087933812292925,
+      "final_cart_position_m": 0.006137682957921765,
+      "max_abs_cart_velocity_mps": 0.0038875647146509747,
+      "final_cart_velocity_mps": -0.0036658766737159678
+    },
+    "mode_transitions_nominal": [
+      {
+        "time_s": 0.5305000000000003,
+        "value": 2.0
+      },
+      {
+        "time_s": 0.6805000000000004,
+        "value": 3.0
+      },
+      {
+        "time_s": 2.4604999999999917,
+        "value": 4.0
+      },
+      {
+        "time_s": 2.8404999999999836,
+        "value": 5.0
+      }
+    ],
+    "mode_transitions_reference": [
+      {
+        "time_s": 0.5305000000000003,
+        "value": 2.0
+      },
+      {
+        "time_s": 0.6805000000000004,
+        "value": 3.0
+      },
+      {
+        "time_s": 2.4604999999999917,
+        "value": 4.0
+      },
+      {
+        "time_s": 2.8404999999999836,
+        "value": 5.0
+      }
+    ],
+    "same_mode_sequence_and_times": true,
+    "uniform_0p01s_comparison": {
+      "cartPole.core.s": {
+        "max_abs_full_run": 0.00015248303976883593,
+        "max_abs_last_2s": 2.7879127602501233e-05,
+        "final_difference": -2.3181379888820644e-05
+      },
+      "cartPole.core.v": {
+        "max_abs_full_run": 0.0005554370303668676,
+        "max_abs_last_2s": 0.00022736104477491927,
+        "final_difference": 6.858782007285224e-05
+      },
+      "cartPole.core.theta": {
+        "max_abs_full_run": 9.833638545231338e-05,
+        "max_abs_last_2s": 2.3666973332225894e-05,
+        "final_difference": 9.064305101169623e-06
+      },
+      "cartPole.core.omega": {
+        "max_abs_full_run": 0.0009817142474997098,
+        "max_abs_last_2s": 0.0005436776865459969,
+        "final_difference": -0.00012617278855287743
+      },
+      "cartPole.power.cell.SOC": {
+        "max_abs_full_run": 2.076963045993807e-08,
+        "max_abs_last_2s": 2.076963045993807e-08,
+        "final_difference": -1.5658159324694054e-08
+      }
+    },
+    "status": "PASS"
+  },
+  "source_trace": [
+    {
+      "source": "InclineCartPole.Mechanical.ReleaseGate",
+      "parameter": "cartPole.gate.jammed",
+      "consumer": "strokeRate 条件包含 not jammed；der(stroke)=strokeRate；stroke>=clearanceTravel 才置位 clearanceReached；gateReleased=clearanceReached"
+    },
+    {
+      "source": "InclineCartPole.Mechanical.CartPoleSystem",
+      "consumer": "connect(gate.gateReleased,gateReleased)"
+    },
+    {
+      "source": "InclineCartPole.Simulation.CompleteMission",
+      "consumer": "connect(cartPole.gateReleased,controller.gateReleased)"
+    },
+    {
+      "source": "InclineCartPole.Control.CartController",
+      "consumer": "connect(gateReleased,readiness.gateReleased)；connect(readiness.permit,supervisor.permit)；connect(supervisor.drive,command.drive)"
+    },
+    {
+      "source": "InclineCartPole.Control.LogicUnits.MeasurementPermit",
+      "consumer": "permit = gateReleased and powerGood and fresh"
+    },
+    {
+      "source": "InclineCartPole.Control.LogicUnits.ModeSequence",
+      "consumer": "held 仅经 startOnTick(tick AND permit) 离开等待状态；实际状态机 mode 保持1"
+    },
+    {
+      "source": "InclineCartPole.Control.ModeSupervisor",
+      "consumer": "drivePermit = operating AND permit；输出 drive 经 CartController 进入本体四个 driveUnit"
+    },
+    {
+      "source": "InclineCartPole.Electrical.WheelDrive",
+      "consumer": "enableRequest 在 drive=false 时选择 zero；bridge.drive 接实际驱动许可"
+    }
+  ]
+}

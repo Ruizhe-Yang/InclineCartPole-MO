@@ -1,0 +1,73 @@
+{
+  "scope": "Original v0.5 executable rerun after v0.6 controlled timing; parent UI/compile paused",
+  "compiler": "OpenModelica 1.25.5 with default C flags (gcc)",
+  "stop_time": 10,
+  "output_interval": 0.01,
+  "tolerance": 1e-06,
+  "binary_sha256": "39f9db1f235aee73ae58ac2ad653b4d6b76914557266f2b33ecc8d9b7819f75c",
+  "rows": [
+    {
+      "trial": 0,
+      "wall_seconds": 2.1023443670019333,
+      "cpu_user_seconds": 2.036731,
+      "cpu_system_seconds": 0.07080199999999999,
+      "return_code": 0,
+      "command": [
+        "./baseline",
+        "-s=dassl",
+        "-jacobian=coloredSymbolical",
+        "-lv=LOG_STATS",
+        "-initialStepSize=0.00005",
+        "-r=acceptance_run0.mat"
+      ],
+      "mat_bytes": 31505542,
+      "state_events": 35,
+      "time_events": 2001,
+      "steps": 32757,
+      "jacobian_evaluations": 8237
+    },
+    {
+      "trial": 1,
+      "wall_seconds": 2.105391924000287,
+      "cpu_user_seconds": 2.0694500000000002,
+      "cpu_system_seconds": 0.04624500000000001,
+      "return_code": 0,
+      "command": [
+        "./baseline",
+        "-s=dassl",
+        "-jacobian=coloredSymbolical",
+        "-lv=LOG_STATS",
+        "-initialStepSize=0.00005",
+        "-r=acceptance_run1.mat"
+      ],
+      "mat_bytes": 31505542,
+      "state_events": 35,
+      "time_events": 2001,
+      "steps": 32757,
+      "jacobian_evaluations": 8237
+    },
+    {
+      "trial": 2,
+      "wall_seconds": 2.0678160329989623,
+      "cpu_user_seconds": 2.026535,
+      "cpu_system_seconds": 0.046090000000000006,
+      "return_code": 0,
+      "command": [
+        "./baseline",
+        "-s=dassl",
+        "-jacobian=coloredSymbolical",
+        "-lv=LOG_STATS",
+        "-initialStepSize=0.00005",
+        "-r=acceptance_run2.mat"
+      ],
+      "mat_bytes": 31505542,
+      "state_events": 35,
+      "time_events": 2001,
+      "steps": 32757,
+      "jacobian_evaluations": 8237
+    }
+  ],
+  "median_wall_seconds": 2.1023443670019333,
+  "min_wall_seconds": 2.0678160329989623,
+  "max_wall_seconds": 2.105391924000287
+}
