@@ -1,77 +1,120 @@
-# InclineCartPole v0.6
+![InclineCartPole：斜坡小车、摆杆、电驱动与采样反馈](docs/assets/overview.svg)
 
-四轮斜坡车摆系统，基于 Modelica Standard Library 4.0.0。
+# InclineCartPole
 
-## 快速使用
+**面向控制与仿真驱动安全研究的紧凑机电热 Modelica 案例。**
 
-1. 解压整个 `InclineCartPole` 文件夹，在建模工具中加载 `package.mo`。
-2. 打开唯一总体仿真入口 `InclineCartPole.Simulation.CompleteMission`。
-3. 使用默认实验：开始时间 0 s、结束时间 10 s、输出间隔 0.01 s、相对容差 `1e-6`。本次在 OpenModelica 1.25.5 中使用 DASSL 和符号 Jacobian 验证。
-4. 仿真后展开顶层的 `displays`，查看六个面板；也可在结果浏览器中展开 `displays.engineering.values`，直接选择具名工程量。
+[English](README.md) · **简体中文**
 
-源文件保持标准 Modelica/MSL 4.0.0 写法；OpenModelica 编译选项使用工具专属注解。MWorks.Sysplorer 可以作为目标建模环境，但本次没有完成 MWorks 实机验收，其求解器与编译耗时应在目标设备上复测。
+[![Source version 0.6.0](https://img.shields.io/badge/source-v0.6.0-315d73)](package.mo)
+[![Modelica Standard Library 4.0.0](https://img.shields.io/badge/MSL-4.0.0-536478)](package.mo)
 
-## v0.6 的主要变化
+## 项目目标
 
-- **本体包含完整采集设备。** 删除顶层独立 Acquisition，将位置编码器、角度编码器、四个轮载传感器、采样时钟、报文传输和可替换测量边界直接放入 `Mechanical.CartPoleSystem`。采样周期由 `cartPole.transport.samplePeriod` 统一提供。
-- **修正实际能量与载荷关系。** 辅助电源由转换电流、实际输出电容和负载闭合功率；失电后电容按实际负载放电。传感器失电后冻结前端状态，数字输出保持并由有效性联锁隔离。缓冲器加入实际作用高度对应的轮载分配力矩。
-- **建立只读 Displays。** 采用 MOSAIC-GT25 的集中展示思路，保留模块化面板和显式连接，工程单位换算放在独立无状态模块中。显示层不改变控制器使用的测量链路。
-- **保留 v0.5 的动态范围。** 仍有 61 个连续状态；四套独立电驱、轮地接触、电池 RC 与 SOC、母线及辅助电容、热网络、传感器前端和释放挡板动态均保留。
-- **统一布局与代码。** 顶层按任务、控制、本体、环境、展示组织；本体按供电释放、四轮驱动、车摆、传感及采样传输组织。图形端口、连线、面板标签及源码排版已复核。
+InclineCartPole 将倒立摆小车的机械运动与支撑其控制过程的实际设备放在同一个模型中：四个独立驱动的车轮、电池与预充电路、物理释放挡板、本地传感器、采样通信和监督控制器。模型为研究物理行为、测量质量、控制决策与运行约束的相互作用提供一个规模适中的系统级案例。
 
-## 真实运行顺序
+项目面向系统级建模、控制实验与仿真驱动安全分析的科研和教学使用。通过明确的物理与信号接口，可以沿着干预位置追踪运动、电气需求、温度与控制状态的变化。
 
-默认任务在 0.5 s 发出释放请求。电源先完成预充与就绪判定，挡板经历设备响应延迟并完成真实净空行程，控制器收到有效测量后才使能驱动。之后依次完成短时激励、能量摆起、竖直捕获和稳定平衡。
+## 当前版本
 
-| 模式编号 | 含义 | 名义工况进入时间 |
-|---:|---|---:|
-| 1 | 等待许可 | 初始状态 |
-| 2 | 启动激励 | 约 0.5305 s |
-| 3 | 能量摆起 | 约 0.6805 s |
-| 4 | 竖直捕获 | 约 2.4605 s |
-| 5 | 稳定平衡 | 约 2.8405 s |
-| 6 | 驱动禁用 | 名义工况未进入 |
+| 项目 | 当前源码信息 |
+| :--- | :--- |
+| Modelica 根包 | `InclineCartPole` |
+| GitHub 仓库 | `InclineCartPole-MO` |
+| 包版本 | **0.6.0**；[package.mo](package.mo) 中的版本日期为 2026-11-06 |
+| 声明依赖 | Modelica Standard Library **4.0.0** |
+| 仿真入口 | [`InclineCartPole.Simulation.CompleteMission`](Simulation/CompleteMission.mo) |
+| 默认实验 | 0–10 s；输出间隔 0.01 s；容差 `1e-6` |
+| 默认机械设置 | 5° 斜坡；2 kg 小车；0.2 kg、0.45 m 摆杆；四轮独立驱动 |
+| 观测界面 | [`Displays.RunDisplay`](Displays/RunDisplay.mo) 中的 35 项工程量 |
+| 说明核对基线 | [`d093ed7`](https://github.com/Ruizhe-Yang/InclineCartPole-MO/commit/d093ed7c7a4b3c6374844af052d579f9cb6dfd57)；核对日期 2026-11-12 |
 
-测量默认每 10 ms 采样，经过 0.5 ms 传输后送达；结果输出间隔和物理采样周期是两个概念。控制器判断真实挡板释放、供电就绪、数据有效、时间戳与测量年龄。
+包版本与 Git 提交号共同标识实验所用源码，复现研究时应同时记录。
 
-## Displays：六个面板，35 项工程量
+## 模型如何运行
 
-以下字段统一位于 `displays.engineering.values` 下。FL、FR、RL、RR 分别表示左前、右前、左后、右后轮。
+![CompleteMission 架构：任务和环境作用于本体，测量与命令形成控制闭环，显示模块观测系统](docs/assets/architecture.svg)
 
-| 面板 | 数量 | 字段与单位 |
-|---|---:|---|
-| 车摆运动 | 5 | `cartPosition` m；`cartSpeed` m/s；`poleAngle` °；`poleRate` °/s；`tipClearance` m |
-| 采集测量 | 6 | `measuredPosition` m；`measuredSpeed` m/s；`measuredAngle` °；`measuredRate` °/s；`dataAge` ms；`measurementValid` |
-| 四轮驱动 | 8 | `currentFL/FR/RL/RR` A；`requestFL/FR/RL/RR` A |
-| 电源与热 | 6 | `busVoltage` V；`batteryCurrent` A；`socPercent` %；`batteryTemperature` °C；`maxWindingTemperature` °C；`maxSlipVelocity` m/s |
-| 轮地接触 | 4 | `normalFL/FR/RL/RR` N |
-| 运行状态 | 6 | `mode`；`acceleration` m/s²；`gateReleased`；`powerGood`；`driveEnabled`；`balanceActive` |
+*根据 [CompleteMission.mo](Simulation/CompleteMission.mo) 的连接关系绘制的概念架构图。本体包含传感器和通信设备；显示模块属于观测支路。*
 
-其中，`poleAngle=0°` 表示竖直向上，显示时折算至 −180° 至 180°；`batteryCurrent` 以放电为正；SOC 显示为百分数；最大滑移速度为四轮滑移速度绝对值中的最大值。车摆运动面板显示物理真值，采集测量面板显示经过传感、采样和传输的控制器输入。
+任务在 **0.5 s** 发出唯一的外部释放请求。请求使释放机构通电，但不直接启动控制器。控制许可由实际挡板状态、供电状态和有效且及时的测量共同决定。控制器依次经历等待、短时激励、起摆、捕获和平衡；运行期间失去许可会进入锁存禁用状态；捕获或平衡状态下触发失衡条件时可以返回起摆。状态转移由 [MSL StateGraph 元件](Control/LogicUnits/ModeSequence.mo) 实现。
 
-数值部件采用 MSL `Interaction.Show`，并在面板图标上提供动态显示。编辑状态出现 `--` 是未绑定仿真时刻的占位显示；动态数值的图形刷新方式取决于建模工具，所有 35 项均可直接从结果变量读取。
+物理本体由平面车摆动力学核心与四个车轮装配组成。每个驱动包含电枢电路、平均功率桥、电流控制器、减速机构和热通路。供电侧包含电池动态、直流母线电容、预充和基于电压的就绪判断。车轮与地面之间采用鬃毛接触模型。编码器、轮载传感器和传输设备均装配在本体内，默认采样周期为 **10 ms**，传输延迟为 **0.5 ms**。控制器使用这条测量链提供的信息，独立遥测则供外部观察物理状态。
 
-## 仿真速度与复现
+### 包结构
 
-验收耗时指**已编译模型执行完整 10 s 工况的墙钟时间**，包含结果写入；编译和链接单独统计。验收没有放宽 `1e-6` 容差，没有降低采样频率，也没有删除动态状态。
+| 包 | 职责与主要入口 |
+| :--- | :--- |
+| [`Simulation`](Simulation) | 任务释放请求与总体实验装配 |
+| [`Mechanical`](Mechanical) | [车摆动力学](Mechanical/PlanarCore.mo)、车轮、释放挡板与本体装配 |
+| [`Electrical`](Electrical) | 电池、预充、车轮驱动、功率转换与相关热网络 |
+| [`Signals`](Signals) | 编码器、轮载传感器、采样传输与可替换测量插入点 |
+| [`Control`](Control) | 能量起摆、平衡控制、模式监督与电流分配 |
+| [`Environment`](Environment) | 环境温度与风速分量 |
+| [`Interfaces`](Interfaces) | 命令、测量、物理替换边界与遥测接口 |
+| [`Displays`](Displays) | 运动、感知、驱动、供电、接触和状态的只读显示 |
 
-本测试环境的最终五次运行耗时为 **1.409–1.462 s，中位数 1.443 s**；同期原始 v0.5 的三次中位数为 **2.102 s**。严格 1.00 s 尚未达到。上述结果对应下述优化构建配置，构建本身另需约 5.67 s。
+## 快速开始
 
-OpenModelica 的复现脚本位于 [Resources/Scripts](Resources/Scripts)。优化使用符号 Jacobian、编译期参数求值及 GCC 的常规优化与链接优化，不启用 `fast-math`。编译期参数求值模式下，修改参数后需要重新编译，不能把对同一二进制的运行时 `-override` 当作完整参数扫描方式。
+### 打开总体实验
 
-完整实测批次、构建命令、精度对照和运行范围见 [Performance_Report.md](Resources/Documentation/Performance_Report.md)。性能与运行机器、负载、求解器和编译器有关，不承诺所有环境都达到相同秒数。
+准备具有 **MSL 4.0.0** 的 Modelica 环境，并将仓库克隆到与根包名称一致的目录：
 
-## 验证与使用边界
+```sh
+git clone https://github.com/Ruizhe-Yang/InclineCartPole-MO.git InclineCartPole
+cd InclineCartPole
+```
 
-名义工况约 2.84 s 进入稳定平衡；最后 2 s 的最大竖直偏角约 0.031°，小车最大绝对位置约 9.1 mm。四轮保持正法向载荷，杆端最小净空约 0.10 m。35 项显示值已逐项与来源比对。
+加载 `package.mo`，打开 `InclineCartPole.Simulation.CompleteMission`，先采用默认实验设置。源码包含 OpenModelica 的 DASSL、符号 Jacobian 和 `0.00005` s 初始步长注解；在其他 Modelica 环境中应明确设置对应求解选项。
 
-挡板卡滞检查中，释放请求和线圈通电均发生，但实际挡板未释放，控制器始终等待，四路电流请求保持零。卡滞时线圈仍耗电，本版没有长期线圈热保护或释放超时故障锁存。此检查证明启动联锁正确，不代表任意持续时间的卡滞都安全。
+### 复现 OpenModelica 运行
 
-模型属于平面、平均电驱与四轮保持接触的系统级模型。默认参数是建模假设，尚未用指定实物试验标定；未解析完整 PWM 波形、三维车体运动、车轮离地后的飞行接触切换或电磁执行器内部场。局部功率残差检查不等同于整机全边界能量积分审计。
+仓库提供的[运行脚本](Resources/Scripts/run_openmodelica.py)负责构建、重复执行，并保留命令、源码哈希、日志、MAT 结果与计时记录：
 
-详细说明和原始检查结果：
+```sh
+python Resources/Scripts/run_openmodelica.py --repeat 5
+```
 
-- [物理建模与验证说明](Resources/Documentation/Physics_Verification_zh.md)
-- [性能与数值对照](Resources/Documentation/Performance_Report.md)
-- [机器可读验收记录](Resources/Verification)
+脚本需要 Python、可调用的 `omc`、GCC/G++ 和 MSL 4.0.0。`--omc` 可指定编译器路径，`--msl-path` 可指定包含 `Complex.mo`、`ModelicaServices` 和 `Modelica` 的标准库目录。每次运行建立新的构建目录。默认优化构建会在编译阶段求值参数，因此**修改参数后需要重新编译**；`--standard` 可关闭参数求值和链接时优化。
 
+## 应该观察什么
+
+打开 `displays` 实例，或绘制 `displays.engineering.values` 下的变量。工程量区分了物理状态、控制器接收的测量和驱动命令。
+
+| 研究问题 | `displays.engineering.values` 下的变量 | 阅读要点 |
+| :--- | :--- | :--- |
+| 摆杆是否接近竖直平衡？ | `poleAngle`、`poleRate`、`balanceActive` | 角度归一化后以度显示，零表示竖直向上；角度与角速度应联合观察。 |
+| 小车是否处于有效行程内？ | `cartPosition`、`cartSpeed`、`tipClearance` | 沿斜面的位置、速度，以及摆端相对地面的净空 |
+| 控制器实际收到什么信息？ | `measuredPosition`、`measuredAngle`、`dataAge`、`measurementValid` | 对比测量与物理遥测；数据龄期单位为毫秒。 |
+| 驱动是否跟踪请求？ | `requestFL`、`currentFL` 及对应的 `FR`、`RL`、`RR` 量 | 四轮请求电流与实际电流 |
+| 供电是否可用？ | `busVoltage`、`batteryCurrent`、`socPercent`、`powerGood` | 电池电流以放电为正，荷电状态以百分数显示。 |
+| 热与接触状态如何变化？ | `batteryTemperature`、`maxWindingTemperature`、`maxSlipVelocity`、`normalFL`–`normalRR` | 温度为 °C；滑移与法向载荷补充物理解释。 |
+| 为什么启动或停止？ | `mode`、`gateReleased`、`driveEnabled` | 模式 1：等待；2：激励；3：起摆；4：捕获；5：平衡；6：禁用 |
+
+[工程量转换模块](Displays/EngineeringValues.mo)定义单位和映射。显示值只用于观察，不参与控制反馈。
+
+## 科研使用与复现
+
+先建立名义运行结果，再引入受控变化。适合开展的研究包括释放延迟与卡滞、编码器偏差与分辨率、信息龄期、电流跟踪、供电就绪、轮地滑移和热负荷。参数保存在所属设备中，例如 [`ReleaseGate.jammed`](Mechanical/ReleaseGate.mo) 表示请求已经到达而挡板无法缩回。
+
+源码还提供电池、挡板、驱动、接触和测量路径的可替换边界。替换模型应遵守接口契约，并明确定义其名义行为；物理参数变化应与控制器内部名义估计的变化分开记录。
+
+每次实验应保存 Git 提交号、包与 MSL 版本、工具版本、求解设置、参数修改、初始条件和输出变量。构建时间与可执行文件运行时间应分别报告。引用软件时可注明 **Ruizhe Yang、InclineCartPole、0.6.0**、仓库地址及实际使用的提交号。
+
+### 已有数值记录
+
+仓库包含[验证记录](Resources/Verification)和[性能报告](Resources/Documentation/Performance_Report.md)。归档的 [v0.6 验收计时批次](Resources/Verification/v06_acceptance_timings.json)记录了五次成功执行的 10 s 工况，墙钟时间中位数为 **1.443 s**，不含编译。其[记录环境](Resources/Verification/host_environment.json)为 Linux、AMD EPYC 9V74、OpenModelica **1.25.5**、MSL **4.0.0** 与 GCC **14.2.0**。这是指定条件下的历史测量，不代表所有电脑都能达到同一速度，也不等于对后续每次源码修改进行了重新验证。
+
+## 建模适用范围
+
+模型采用名义工程参数，尚未依据实体小车进行参数辨识。平面核心通过断言检查车轮法向载荷为正、摆端净空为正，以及小车位置位于 ±1.25 m 内；车轮离地、倾覆和摆杆碰地超出了该模型的有效域。鬃毛接触与平均功率桥属于系统级表示，不包含开关波形或详细三维结构行为。
+
+现有传输模型要求 `0 <= latency < samplePeriod`，更长延迟需要适当的队列模型。默认 10 s 实验用于短时瞬态研究；长期运行的温升结论需要另行设置实验。解释定量结果时，应同时查阅[物理验证说明](Resources/Documentation/Physics_Verification_zh.md)。
+
+## 参与改进
+
+通过 [Issues](https://github.com/Ruizhe-Yang/InclineCartPole-MO/issues)反馈可复现的建模或文档问题，并提供提交号、工具版本、实验入口、参数修改与日志或曲线。欢迎完善物理假设、保持接口契约及提高可复现性的贡献。
+
+## 许可
+
+仓库提供 [GNU General Public License 第 3 版](LICENSE)。重新分发时请查阅许可及适用的上游声明。
